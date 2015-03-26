@@ -1,25 +1,28 @@
- {
-  "author"      : "David Larrimore <david.larrimore@mixfin.com>",
-  "name"        : "ForexAPIServer",
-  "description" : "Forex API Server",
-  "version"     : "0.0.1",
-  "engines"     : {
+{
+  "author": "David Larrimore <david.larrimore@mixfin.com>",
+  "name": "ForexAPIServer",
+  "description": "Forex API Server",
+  "version": "0.0.1",
+  "engines": {
     "node": ">=0.10.0"
   },
-  "dependencies" : {
-    "actionhero" : "10.1.0",
-    "ws"         : "latest",
-    "grunt"      : "latest"
+  "dependencies": {
+    "actionhero": "10.1.0",
+    "config": "^1.12.0",
+    "grunt": "latest",
+    "mysql": "latest",
+    "sequelize": "^2.0.5",
+    "ws": "latest"
   },
-  "devDependencies" : {
-    "mocha"  : "latest",
-    "should" : "latest"
+  "devDependencies": {
+    "mocha": "latest",
+    "should": "latest"
   },
-  "scripts" : {
-    "help"         : "actionhero help",
-    "start"        : "actionhero start",
-    "actionhero"   : "actionhero",
-    "startCluster" : "actionhero startCluster",
-    "test"         : "mocha"
+  "scripts": {
+    "help": "actionhero help",
+    "start": "actionhero start",
+    "actionhero": "actionhero",
+    "startCluster": "actionhero startCluster",
+    "test": "mocha"
   }
 }

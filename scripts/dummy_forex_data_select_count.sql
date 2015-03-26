@@ -1,0 +1,1 @@
+select count(*) from mixfin.forex_rates;

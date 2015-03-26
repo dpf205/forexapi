@@ -1,0 +1,1 @@
+select * from mixfin.forex_rates;

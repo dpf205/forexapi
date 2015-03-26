@@ -1226,3 +1226,678 @@
 {"level":"info","message":"HELLO WORLD","timestamp":"2015-03-26T00:58:03.454Z"}
 {"level":"info","message":"Data starts as: test","timestamp":"2015-03-26T00:58:03.455Z"}
 {"to":"127.0.0.1","action":"showForexData","params":"{\"apiVersion\":\"1\",\"action\":\"showForexData\"}","duration":189,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T00:58:03.646Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-26T00:59:59.042Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-26T02:21:37.805Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-26T02:21:37.832Z"}
+{"level":"notice","message":"pid: 6651","timestamp":"2015-03-26T02:21:38.188Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-26T02:21:38.188Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-26T02:21:38.189Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-26T02:21:38.189Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-26T02:21:38.193Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-26T02:21:38.195Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-26T02:21:38.732Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-25 22:21:38 ***","timestamp":"2015-03-26T02:21:38.733Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-26T02:21:38.734Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":3,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:21:45.407Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":26,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:21:45.450Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":0,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:22:22.931Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":30,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:22:22.962Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":0,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:22:38.321Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":19,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:22:38.343Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-26T02:22:46.879Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-26T02:22:49.383Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-26T02:22:49.407Z"}
+{"level":"notice","message":"pid: 6657","timestamp":"2015-03-26T02:22:49.645Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-26T02:22:49.645Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-26T02:22:49.646Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-26T02:22:49.646Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-26T02:22:49.650Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-26T02:22:49.653Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-26T02:22:50.175Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-25 22:22:50 ***","timestamp":"2015-03-26T02:22:50.175Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-26T02:22:50.180Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":2,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:22:51.594Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":87,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:22:51.694Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:22:55.322Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:22:55.322Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:22:55.323Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:22:55.324Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:22:55.324Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:22:55.325Z"}
+{"level":"error","message":"! ReferenceError: rows is not defined","timestamp":"2015-03-26T02:22:55.343Z"}
+{"level":"error","message":"!     at Object.exports.getForexdataFromMYSQL.run (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:25:35)","timestamp":"2015-03-26T02:22:55.346Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:301:31","timestamp":"2015-03-26T02:22:55.347Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:129:42)","timestamp":"2015-03-26T02:22:55.351Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:291:12)","timestamp":"2015-03-26T02:22:55.357Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:278:18","timestamp":"2015-03-26T02:22:55.357Z"}
+{"level":"error","message":"!     at b (domain.js:183:18)","timestamp":"2015-03-26T02:22:55.358Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:123:23)","timestamp":"2015-03-26T02:22:55.359Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:277:24)","timestamp":"2015-03-26T02:22:55.359Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/genericServer.js:93:23)","timestamp":"2015-03-26T02:22:55.359Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/servers/web.js:132:16","timestamp":"2015-03-26T02:22:55.360Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:22:55.360Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":56,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:22:55.361Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:23:05.369Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:23:05.369Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:23:05.369Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:23:05.369Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:23:05.369Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:23:05.369Z"}
+{"level":"error","message":"! Error: connect ETIMEDOUT","timestamp":"2015-03-26T02:23:05.370Z"}
+{"level":"error","message":"!     at Connection._handleConnectTimeout (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:346:13)","timestamp":"2015-03-26T02:23:05.370Z"}
+{"level":"error","message":"!     at Socket.g (events.js:180:16)","timestamp":"2015-03-26T02:23:05.370Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:92:17)","timestamp":"2015-03-26T02:23:05.370Z"}
+{"level":"error","message":"!     at Socket._onTimeout (net.js:327:8)","timestamp":"2015-03-26T02:23:05.370Z"}
+{"level":"error","message":"!     at _makeTimerTimeout (timers.js:429:11)","timestamp":"2015-03-26T02:23:05.370Z"}
+{"level":"error","message":"!     at Timer.unrefTimeout [as ontimeout] (timers.js:493:5)","timestamp":"2015-03-26T02:23:05.370Z"}
+{"level":"error","message":"!     --------------------","timestamp":"2015-03-26T02:23:05.370Z"}
+{"level":"error","message":"!     at Protocol._enqueue (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:135:48)","timestamp":"2015-03-26T02:23:05.371Z"}
+{"level":"error","message":"!     at Protocol.handshake (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:52:41)","timestamp":"2015-03-26T02:23:05.371Z"}
+{"level":"error","message":"!     at Connection.connect (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:109:18)","timestamp":"2015-03-26T02:23:05.371Z"}
+{"level":"error","message":"!     at Object.exports.getForexdataFromMYSQL.run (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:16:16)","timestamp":"2015-03-26T02:23:05.371Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:301:31","timestamp":"2015-03-26T02:23:05.372Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:129:42)","timestamp":"2015-03-26T02:23:05.372Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:291:12)","timestamp":"2015-03-26T02:23:05.372Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:278:18","timestamp":"2015-03-26T02:23:05.372Z"}
+{"level":"error","message":"!     at b (domain.js:183:18)","timestamp":"2015-03-26T02:23:05.372Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:123:23)","timestamp":"2015-03-26T02:23:05.373Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:23:05.373Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":10068,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:23:05.374Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:24:57.636Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:24:57.636Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:24:57.636Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:24:57.636Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:24:57.636Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:24:57.636Z"}
+{"level":"error","message":"! Error: connect ETIMEDOUT","timestamp":"2015-03-26T02:24:57.636Z"}
+{"level":"error","message":"!     at Connection._handleConnectTimeout (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:346:13)","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at Socket.g (events.js:180:16)","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:92:17)","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at Socket._onTimeout (net.js:327:8)","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at _makeTimerTimeout (timers.js:429:11)","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at Timer.unrefTimeout [as ontimeout] (timers.js:493:5)","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     --------------------","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at Protocol._enqueue (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:135:48)","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at Protocol.handshake (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:52:41)","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at Connection.connect (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:109:18)","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at Object.exports.getForexdataFromMYSQL.run (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:16:16)","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:301:31","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:129:42)","timestamp":"2015-03-26T02:24:57.637Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:291:12)","timestamp":"2015-03-26T02:24:57.638Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:278:18","timestamp":"2015-03-26T02:24:57.638Z"}
+{"level":"error","message":"!     at b (domain.js:183:18)","timestamp":"2015-03-26T02:24:57.638Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:123:23)","timestamp":"2015-03-26T02:24:57.638Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:24:57.638Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":10033,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:24:57.638Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-26T02:26:10.659Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-26T02:26:10.694Z"}
+{"level":"notice","message":"pid: 6685","timestamp":"2015-03-26T02:26:10.961Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-26T02:26:10.961Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-26T02:26:10.962Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-26T02:26:10.962Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-26T02:26:10.966Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-26T02:26:10.967Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-26T02:26:11.528Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-25 22:26:11 ***","timestamp":"2015-03-26T02:26:11.529Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-26T02:26:11.531Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:26:29.037Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:26:29.037Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:26:29.037Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:26:29.037Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:26:29.037Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:26:29.037Z"}
+{"level":"error","message":"! Error: connect ETIMEDOUT","timestamp":"2015-03-26T02:26:29.038Z"}
+{"level":"error","message":"!     at Connection._handleConnectTimeout (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:346:13)","timestamp":"2015-03-26T02:26:29.038Z"}
+{"level":"error","message":"!     at Socket.g (events.js:180:16)","timestamp":"2015-03-26T02:26:29.038Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:92:17)","timestamp":"2015-03-26T02:26:29.038Z"}
+{"level":"error","message":"!     at Socket._onTimeout (net.js:327:8)","timestamp":"2015-03-26T02:26:29.038Z"}
+{"level":"error","message":"!     at _makeTimerTimeout (timers.js:429:11)","timestamp":"2015-03-26T02:26:29.038Z"}
+{"level":"error","message":"!     at Timer.unrefTimeout [as ontimeout] (timers.js:493:5)","timestamp":"2015-03-26T02:26:29.038Z"}
+{"level":"error","message":"!     --------------------","timestamp":"2015-03-26T02:26:29.038Z"}
+{"level":"error","message":"!     at Protocol._enqueue (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:135:48)","timestamp":"2015-03-26T02:26:29.038Z"}
+{"level":"error","message":"!     at Protocol.handshake (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:52:41)","timestamp":"2015-03-26T02:26:29.039Z"}
+{"level":"error","message":"!     at Connection.connect (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:109:18)","timestamp":"2015-03-26T02:26:29.039Z"}
+{"level":"error","message":"!     at Object.exports.getForexdataFromMYSQL.run (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:16:16)","timestamp":"2015-03-26T02:26:29.039Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:301:31","timestamp":"2015-03-26T02:26:29.039Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:129:42)","timestamp":"2015-03-26T02:26:29.039Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:291:12)","timestamp":"2015-03-26T02:26:29.039Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:278:18","timestamp":"2015-03-26T02:26:29.039Z"}
+{"level":"error","message":"!     at b (domain.js:183:18)","timestamp":"2015-03-26T02:26:29.039Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:123:23)","timestamp":"2015-03-26T02:26:29.039Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:26:29.039Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":10051,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:26:29.040Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:26:48.127Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:26:48.128Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:26:48.128Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:26:48.128Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:26:48.128Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:26:48.128Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:26:48.131Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:21:35)","timestamp":"2015-03-26T02:26:48.131Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:26:48.131Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:26:48.132Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:26:48.132Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:26:48.132Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:26:48.132Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:26:48.132Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:26:48.132Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:26:48.132Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:26:48.132Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:26:48.132Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":433,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:26:48.133Z"}
+{"level":"alert","message":"! Failed to load /Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js","timestamp":"2015-03-26T02:27:36.066Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-26T02:27:55.768Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-26T02:27:55.790Z"}
+{"level":"notice","message":"pid: 6689","timestamp":"2015-03-26T02:27:56.056Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-26T02:27:56.056Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-26T02:27:56.056Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-26T02:27:56.057Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-26T02:27:56.060Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-26T02:27:56.061Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-26T02:27:56.559Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-25 22:27:56 ***","timestamp":"2015-03-26T02:27:56.560Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-26T02:27:56.564Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:27:59.211Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:27:59.211Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:27:59.211Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:27:59.211Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:27:59.211Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:27:59.211Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:27:59.221Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:21:35)","timestamp":"2015-03-26T02:27:59.221Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:27:59.221Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:27:59.221Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:27:59.221Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:27:59.222Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:27:59.222Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:27:59.225Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:27:59.225Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:27:59.225Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:27:59.225Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:27:59.226Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":448,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:27:59.229Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:28:56.720Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:28:56.720Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:28:56.720Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:28:56.720Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:28:56.720Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:28:56.721Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:28:56.722Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:21:35)","timestamp":"2015-03-26T02:28:56.722Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:28:56.722Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:28:56.722Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:28:56.723Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:28:56.724Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:28:56.724Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:28:56.724Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:28:56.725Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:28:56.725Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:28:56.725Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:28:56.725Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":328,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:28:56.725Z"}
+{"level":"info","message":"The name is: ","timestamp":"2015-03-26T02:30:17.514Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:30:17.514Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:30:17.514Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:30:17.514Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:30:17.514Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:30:17.514Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:30:17.514Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:30:17.516Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:22:35)","timestamp":"2015-03-26T02:30:17.516Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:30:17.517Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:30:17.518Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:30:17.518Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:30:17.518Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:30:17.518Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:30:17.518Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:30:17.518Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:30:17.519Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:30:17.519Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:30:17.519Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":401,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:30:17.519Z"}
+{"level":"info","message":"The name is: ","timestamp":"2015-03-26T02:30:56.105Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:30:56.106Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:30:56.107Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:30:56.108Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:30:56.108Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:30:56.108Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:30:56.109Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:30:56.110Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:22:35)","timestamp":"2015-03-26T02:30:56.111Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:30:56.112Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:30:56.112Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:30:56.112Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:30:56.112Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:30:56.112Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:30:56.112Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:30:56.112Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:30:56.112Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:30:56.112Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:30:56.113Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":416,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:30:56.113Z"}
+{"level":"info","message":"The name is: ","timestamp":"2015-03-26T02:31:40.236Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:31:40.236Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:31:40.237Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:31:40.237Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:31:40.237Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:31:40.237Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:31:40.237Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:31:40.239Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:22:35)","timestamp":"2015-03-26T02:31:40.239Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:31:40.239Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:31:40.239Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:31:40.239Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:31:40.239Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:31:40.239Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:31:40.239Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:31:40.239Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:31:40.239Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:31:40.239Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:31:40.240Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":431,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:31:40.240Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:32:38.159Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:32:38.159Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:32:38.159Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:32:38.160Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:32:38.160Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:32:38.160Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:32:38.160Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:32:38.161Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:22:35)","timestamp":"2015-03-26T02:32:38.161Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:32:38.161Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:32:38.161Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:32:38.161Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:32:38.161Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:32:38.162Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:32:38.162Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:32:38.162Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:32:38.162Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:32:38.162Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:32:38.162Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":339,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:32:38.162Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:34:06.704Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:34:06.706Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:34:06.707Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:34:06.708Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:34:06.708Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:34:06.708Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:34:06.708Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:34:06.710Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:26:35)","timestamp":"2015-03-26T02:34:06.711Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:34:06.711Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:34:06.711Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:34:06.711Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:34:06.711Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:34:06.711Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:34:06.711Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:34:06.711Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:34:06.711Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:34:06.712Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:34:06.712Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":377,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:34:06.712Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:34:43.874Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:34:43.875Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:34:43.875Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:34:43.875Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:34:43.875Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:34:43.875Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:34:43.875Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:34:43.876Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:23:35)","timestamp":"2015-03-26T02:34:43.876Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:34:43.876Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:34:43.876Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:34:43.876Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:34:43.876Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:34:43.876Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:34:43.876Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:34:43.876Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:34:43.877Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:34:43.877Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:34:43.877Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":329,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:34:43.877Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:35:20.409Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:35:20.409Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:35:20.409Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:35:20.409Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:35:20.409Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:35:20.410Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:35:20.410Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:35:20.412Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:24:35)","timestamp":"2015-03-26T02:35:20.412Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:35:20.412Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:35:20.413Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:35:20.413Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:35:20.413Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:35:20.413Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:35:20.413Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:35:20.413Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:35:20.414Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:35:20.414Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:35:20.414Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":402,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:35:20.414Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:35:34.989Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:35:34.990Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:35:34.990Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:35:34.991Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:35:34.991Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:35:34.991Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:35:34.991Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:35:34.996Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:24:35)","timestamp":"2015-03-26T02:35:34.996Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:35:34.997Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:35:34.997Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:35:34.997Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:35:34.997Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:35:34.997Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:35:34.997Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:35:34.997Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:35:34.997Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:35:34.997Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:35:34.997Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":176,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:35:34.997Z"}
+{"level":"alert","message":"! Failed to load /Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js","timestamp":"2015-03-26T02:36:48.021Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-26T02:36:54.063Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-26T02:36:54.077Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-26T02:37:23.278Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-26T02:37:23.295Z"}
+{"level":"alert","message":"! Failed to load /Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js","timestamp":"2015-03-26T02:37:23.306Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-26T02:38:00.090Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-26T02:38:00.107Z"}
+{"level":"notice","message":"pid: 6723","timestamp":"2015-03-26T02:38:00.279Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-26T02:38:00.279Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-26T02:38:00.280Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-26T02:38:00.280Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-26T02:38:00.283Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-26T02:38:00.285Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-26T02:38:00.635Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-25 22:38:00 ***","timestamp":"2015-03-26T02:38:00.635Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-26T02:38:00.637Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:38:02.938Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:38:02.940Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:38:02.940Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:38:02.940Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:38:02.940Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:38:02.940Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:38:02.941Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:38:02.944Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:24:35)","timestamp":"2015-03-26T02:38:02.944Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:38:02.944Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:38:02.944Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:38:02.944Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:38:02.944Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:38:02.944Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:38:02.944Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:38:02.944Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:38:02.944Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:38:02.945Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:38:02.945Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":405,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:38:02.945Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:38:24.069Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:38:24.070Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:38:24.070Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:38:24.070Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:38:24.070Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:38:24.071Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:38:24.071Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:38:24.072Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:24:35)","timestamp":"2015-03-26T02:38:24.072Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:38:24.073Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:38:24.073Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:38:24.073Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:38:24.073Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:38:24.073Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:38:24.073Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:38:24.073Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:38:24.074Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:38:24.074Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:38:24.074Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":346,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:38:24.074Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:38:40.529Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:38:40.530Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:38:40.530Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:38:40.530Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:38:40.530Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:38:40.531Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:38:40.531Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:38:40.533Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:27:35)","timestamp":"2015-03-26T02:38:40.534Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:38:40.534Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:38:40.534Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:38:40.534Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:38:40.534Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:38:40.535Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:38:40.535Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:38:40.535Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:38:40.535Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:38:40.536Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:38:40.536Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":175,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:38:40.536Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:39:21.819Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:39:21.820Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:39:21.821Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:39:21.822Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:39:21.822Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:39:21.822Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:39:21.822Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:39:21.823Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:27:35)","timestamp":"2015-03-26T02:39:21.823Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:39:21.823Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:39:21.824Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:39:21.824Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:39:21.824Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:39:21.824Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:39:21.824Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:39:21.824Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:39:21.824Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:39:21.824Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:39:21.824Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":415,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:39:21.824Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:39:33.177Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:39:33.178Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:39:33.178Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:39:33.178Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:39:33.178Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:39:33.179Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:39:33.179Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:39:33.180Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:27:35)","timestamp":"2015-03-26T02:39:33.180Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:39:33.180Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:39:33.180Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:39:33.180Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:39:33.180Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:39:33.180Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:39:33.180Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:39:33.181Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:39:33.181Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:39:33.181Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:39:33.181Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":165,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:39:33.181Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:39:36.598Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:39:36.598Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:39:36.599Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:39:36.599Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:39:36.599Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:39:36.599Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:39:36.599Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:39:36.600Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:27:35)","timestamp":"2015-03-26T02:39:36.600Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:39:36.600Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:39:36.601Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:39:36.601Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:39:36.601Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:39:36.601Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:39:36.601Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:39:36.601Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:39:36.601Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:39:36.602Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:39:36.602Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":170,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:39:36.603Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:40:20.214Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:40:20.215Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:40:20.216Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:40:20.216Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:40:20.216Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:40:20.216Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:40:20.216Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:40:20.218Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:27:35)","timestamp":"2015-03-26T02:40:20.218Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:40:20.218Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:40:20.218Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:40:20.218Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:40:20.218Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:40:20.218Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:40:20.219Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:40:20.219Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:40:20.220Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:40:20.220Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:40:20.220Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":395,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:40:20.220Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:40:52.880Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:40:52.881Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:40:52.881Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:40:52.881Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:40:52.881Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:40:52.881Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:40:52.882Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:40:52.883Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:28:35)","timestamp":"2015-03-26T02:40:52.883Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:40:52.883Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:40:52.883Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:40:52.883Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:40:52.884Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:40:52.884Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:40:52.884Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:40:52.884Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:40:52.884Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:40:52.884Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:40:52.884Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":401,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:40:52.884Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:41:05.766Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:41:05.767Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:41:05.767Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:41:05.767Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:41:05.767Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:41:05.767Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:41:05.767Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:41:05.768Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:27:35)","timestamp":"2015-03-26T02:41:05.768Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:41:05.769Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:41:05.769Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:41:05.769Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:41:05.769Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:41:05.769Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:41:05.769Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:41:05.769Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:41:05.769Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:41:05.769Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:41:05.769Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":235,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:41:05.770Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:41:52.495Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:41:52.495Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:41:52.496Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:41:52.496Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:41:52.496Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:41:52.500Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:41:52.500Z"}
+{"level":"error","message":"! TypeError: Cannot set property 'results' of undefined","timestamp":"2015-03-26T02:41:52.501Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:27:35)","timestamp":"2015-03-26T02:41:52.501Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-26T02:41:52.501Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-26T02:41:52.501Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-26T02:41:52.501Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-26T02:41:52.501Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-26T02:41:52.502Z"}
+{"level":"error","message":"!     at Parser.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Parser.js:77:12)","timestamp":"2015-03-26T02:41:52.502Z"}
+{"level":"error","message":"!     at Protocol.write (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:39:16)","timestamp":"2015-03-26T02:41:52.502Z"}
+{"level":"error","message":"!     at Socket.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/Connection.js:82:28)","timestamp":"2015-03-26T02:41:52.502Z"}
+{"level":"error","message":"!     at Socket.emit (events.js:95:17)","timestamp":"2015-03-26T02:41:52.502Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:41:52.502Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":347,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:41:52.502Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:42:47.597Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:42:47.597Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:42:47.597Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:42:47.597Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:42:47.597Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:42:47.597Z"}
+{"level":"error","message":"! TypeError: Object #<Object> has no method 'end'","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"error","message":"!     at Object.exports.getForexdataFromMYSQL.run (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:31:16)","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:301:31","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:129:42)","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:291:12)","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:278:18","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"error","message":"!     at b (domain.js:183:18)","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:123:23)","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:277:24)","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/genericServer.js:93:23)","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/servers/web.js:132:16","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:42:47.598Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":2,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:42:47.598Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:42:47.930Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":334,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:42:47.930Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:42:53.727Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:42:53.727Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:42:53.727Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:42:53.727Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:42:53.727Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:42:53.727Z"}
+{"level":"error","message":"! TypeError: Object #<Object> has no method 'end'","timestamp":"2015-03-26T02:42:53.728Z"}
+{"level":"error","message":"!     at Object.exports.getForexdataFromMYSQL.run (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:31:16)","timestamp":"2015-03-26T02:42:53.728Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:301:31","timestamp":"2015-03-26T02:42:53.728Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:129:42)","timestamp":"2015-03-26T02:42:53.728Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:291:12)","timestamp":"2015-03-26T02:42:53.728Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:278:18","timestamp":"2015-03-26T02:42:53.728Z"}
+{"level":"error","message":"!     at b (domain.js:183:18)","timestamp":"2015-03-26T02:42:53.728Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:123:23)","timestamp":"2015-03-26T02:42:53.729Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:277:24)","timestamp":"2015-03-26T02:42:53.729Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/genericServer.js:93:23)","timestamp":"2015-03-26T02:42:53.729Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/servers/web.js:132:16","timestamp":"2015-03-26T02:42:53.729Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:42:53.729Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":4,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:42:53.729Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:42:53.895Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":171,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:42:53.896Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:42:55.869Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:42:55.869Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:42:55.869Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:42:55.870Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:42:55.870Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:42:55.870Z"}
+{"level":"error","message":"! TypeError: Object #<Object> has no method 'end'","timestamp":"2015-03-26T02:42:55.871Z"}
+{"level":"error","message":"!     at Object.exports.getForexdataFromMYSQL.run (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:31:16)","timestamp":"2015-03-26T02:42:55.871Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:301:31","timestamp":"2015-03-26T02:42:55.871Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:129:42)","timestamp":"2015-03-26T02:42:55.871Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:291:12)","timestamp":"2015-03-26T02:42:55.871Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:278:18","timestamp":"2015-03-26T02:42:55.871Z"}
+{"level":"error","message":"!     at b (domain.js:183:18)","timestamp":"2015-03-26T02:42:55.871Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:123:23)","timestamp":"2015-03-26T02:42:55.871Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:277:24)","timestamp":"2015-03-26T02:42:55.871Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/genericServer.js:93:23)","timestamp":"2015-03-26T02:42:55.871Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/servers/web.js:132:16","timestamp":"2015-03-26T02:42:55.872Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:42:55.872Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":3,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:42:55.872Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:42:56.037Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":168,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:42:56.037Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-26T02:44:01.820Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-26T02:44:01.821Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-26T02:44:01.821Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-26T02:44:01.821Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-26T02:44:01.821Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-26T02:44:01.821Z"}
+{"level":"error","message":"! TypeError: Object #<Object> has no method 'end'","timestamp":"2015-03-26T02:44:01.823Z"}
+{"level":"error","message":"!     at Object.exports.getForexdataFromMYSQL.run (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:31:16)","timestamp":"2015-03-26T02:44:01.824Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:301:31","timestamp":"2015-03-26T02:44:01.824Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:129:42)","timestamp":"2015-03-26T02:44:01.824Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:291:12)","timestamp":"2015-03-26T02:44:01.824Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:278:18","timestamp":"2015-03-26T02:44:01.824Z"}
+{"level":"error","message":"!     at b (domain.js:183:18)","timestamp":"2015-03-26T02:44:01.824Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:123:23)","timestamp":"2015-03-26T02:44:01.824Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:277:24)","timestamp":"2015-03-26T02:44:01.824Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/genericServer.js:93:23)","timestamp":"2015-03-26T02:44:01.824Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/servers/web.js:132:16","timestamp":"2015-03-26T02:44:01.824Z"}
+{"level":"error","message":"*","timestamp":"2015-03-26T02:44:01.824Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":5,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:44:01.825Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:44:02.213Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":394,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:44:02.213Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:44:55.517Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":414,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:44:55.517Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:45:24.372Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":423,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:45:24.373Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-26T02:45:52.083Z"}
