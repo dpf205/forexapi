@@ -5,3 +5,4 @@ node_modules/
 !.elasticbeanstalk/*.global.yml
 *.log
 default.json
+run.sh
