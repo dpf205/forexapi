@@ -1901,3 +1901,201 @@
 {"level":"info","message":"The count is: ","timestamp":"2015-03-26T02:45:24.372Z"}
 {"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":423,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-26T02:45:24.373Z"}
 {"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-26T02:45:52.083Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T17:48:34.498Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T17:48:34.522Z"}
+{"level":"notice","message":"pid: 1017","timestamp":"2015-03-27T17:48:34.783Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T17:48:34.783Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T17:48:34.783Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T17:48:34.784Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T17:48:34.787Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T17:48:34.788Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T17:48:35.176Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 13:48:35 ***","timestamp":"2015-03-27T17:48:35.176Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T17:48:35.178Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":3,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T17:48:45.155Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":17,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T17:48:45.176Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-27T17:48:48.539Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":191,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T17:48:48.539Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T17:49:22.257Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T18:05:32.818Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T18:05:32.839Z"}
+{"level":"notice","message":"pid: 1100","timestamp":"2015-03-27T18:05:33.109Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T18:05:33.109Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T18:05:33.110Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T18:05:33.110Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T18:05:33.112Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T18:05:33.114Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T18:05:33.500Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T18:05:33.538Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 14:05:33 ***","timestamp":"2015-03-27T18:05:33.741Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":2,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T18:05:47.747Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":12,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T18:05:47.765Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-27T18:05:51.202Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":161,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T18:05:51.203Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T18:07:17.151Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T18:09:51.631Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T18:09:51.652Z"}
+{"level":"notice","message":"pid: 1128","timestamp":"2015-03-27T18:09:51.905Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T18:09:51.905Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T18:09:51.905Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T18:09:51.906Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T18:09:51.908Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T18:09:51.909Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T18:09:52.278Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T18:09:52.321Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 14:09:52 ***","timestamp":"2015-03-27T18:09:52.491Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T18:12:16.464Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T19:17:31.119Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T19:17:31.141Z"}
+{"level":"notice","message":"pid: 1242","timestamp":"2015-03-27T19:17:31.370Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T19:20:45.943Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T19:20:45.957Z"}
+{"level":"notice","message":"pid: 1258","timestamp":"2015-03-27T19:20:46.139Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T19:26:18.946Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T19:26:18.966Z"}
+{"level":"notice","message":"pid: 1288","timestamp":"2015-03-27T19:26:19.214Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T19:26:19.214Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T19:26:19.214Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T19:26:19.215Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T19:26:19.217Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T19:26:19.218Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T19:26:19.576Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T19:26:19.605Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 15:26:19 ***","timestamp":"2015-03-27T19:26:19.929Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T19:26:23.940Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T19:27:25.726Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T19:27:25.740Z"}
+{"level":"notice","message":"pid: 1291","timestamp":"2015-03-27T19:27:25.927Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T19:27:25.927Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T19:27:25.927Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T19:27:25.928Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T19:27:25.930Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T19:27:25.931Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T19:27:26.275Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T19:27:26.302Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 15:27:26 ***","timestamp":"2015-03-27T19:27:26.617Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T19:29:29.369Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T19:29:30.766Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T19:29:30.780Z"}
+{"level":"notice","message":"pid: 1294","timestamp":"2015-03-27T19:29:30.964Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T19:29:30.964Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T19:29:30.964Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T19:29:30.964Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T19:29:30.966Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T19:29:30.967Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T19:29:31.316Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T19:29:31.345Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 15:29:31 ***","timestamp":"2015-03-27T19:29:31.921Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T19:33:44.641Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T22:20:19.305Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T22:20:19.328Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T22:20:56.972Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T22:20:56.993Z"}
+{"level":"notice","message":"pid: 1507","timestamp":"2015-03-27T22:20:57.262Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T22:20:57.263Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T22:20:57.263Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T22:20:57.263Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T22:20:57.265Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T22:20:57.267Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T22:20:57.665Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T22:20:57.703Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 18:20:58 ***","timestamp":"2015-03-27T22:20:58.364Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T22:21:00.014Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T22:22:01.587Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T22:22:01.609Z"}
+{"level":"notice","message":"pid: 1513","timestamp":"2015-03-27T22:22:01.869Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T22:22:01.870Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T22:22:01.870Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T22:22:01.870Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T22:22:01.872Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T22:22:01.874Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T22:22:02.274Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T22:22:02.318Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 18:22:02 ***","timestamp":"2015-03-27T22:22:02.906Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":2,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T22:22:06.006Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":12,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T22:22:06.022Z"}
+{"level":"info","message":"HELLO WORLD","timestamp":"2015-03-27T22:22:14.579Z"}
+{"level":"info","message":"Data starts as: test","timestamp":"2015-03-27T22:22:14.579Z"}
+{"to":"127.0.0.1","action":"showForexData","params":"{\"apiVersion\":\"1\",\"action\":\"showForexData\"}","duration":255,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T22:22:14.833Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T22:31:21.308Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T22:31:23.682Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T22:31:23.703Z"}
+{"level":"notice","message":"pid: 1526","timestamp":"2015-03-27T22:31:23.962Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T22:31:23.962Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T22:31:23.962Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T22:31:23.963Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T22:31:23.964Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T22:31:23.966Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T22:31:24.335Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T22:31:24.377Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 18:31:24 ***","timestamp":"2015-03-27T22:31:24.922Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T22:31:55.781Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T22:31:57.235Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T22:31:57.249Z"}
+{"level":"notice","message":"pid: 1529","timestamp":"2015-03-27T22:31:57.427Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T22:31:57.427Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T22:31:57.428Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T22:31:57.428Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T22:31:57.430Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T22:31:57.431Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T22:31:57.775Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T22:31:57.805Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 18:31:58 ***","timestamp":"2015-03-27T22:31:58.354Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":4,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T22:31:59.624Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":11,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T22:31:59.639Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromSequelize","timestamp":"2015-03-27T22:32:05.024Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-27T22:32:05.025Z"}
+{"level":"error","message":"!     action: \"getForexdataFromSequelize\"","timestamp":"2015-03-27T22:32:05.026Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-27T22:32:05.027Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-27T22:32:05.027Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","timestamp":"2015-03-27T22:32:05.028Z"}
+{"level":"error","message":"! ReferenceError: new_meat is not defined","timestamp":"2015-03-27T22:32:05.031Z"}
+{"level":"error","message":"!     at Object.exports.getForexdataFromSequelize.run (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromSequelize.js:15:15)","timestamp":"2015-03-27T22:32:05.031Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:301:31","timestamp":"2015-03-27T22:32:05.031Z"}
+{"level":"error","message":"!     at api.actionProcessor.preProcessAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:129:42)","timestamp":"2015-03-27T22:32:05.032Z"}
+{"level":"error","message":"!     at api.actionProcessor.runAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:291:12)","timestamp":"2015-03-27T22:32:05.032Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:278:18","timestamp":"2015-03-27T22:32:05.032Z"}
+{"level":"error","message":"!     at b (domain.js:183:18)","timestamp":"2015-03-27T22:32:05.032Z"}
+{"level":"error","message":"!     at Domain.run (domain.js:123:23)","timestamp":"2015-03-27T22:32:05.032Z"}
+{"level":"error","message":"!     at api.actionProcessor.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:277:24)","timestamp":"2015-03-27T22:32:05.032Z"}
+{"level":"error","message":"!     at api.genericServer.processAction (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/genericServer.js:93:23)","timestamp":"2015-03-27T22:32:05.032Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/servers/web.js:132:16","timestamp":"2015-03-27T22:32:05.033Z"}
+{"level":"error","message":"*","timestamp":"2015-03-27T22:32:05.033Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":11,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T22:32:05.034Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T22:34:00.809Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T22:34:02.878Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T22:34:02.899Z"}
+{"level":"notice","message":"pid: 1535","timestamp":"2015-03-27T22:34:03.152Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T22:34:03.153Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T22:34:03.153Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T22:34:03.153Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T22:34:03.155Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T22:34:03.156Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T22:34:03.528Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T22:34:03.567Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 18:34:04 ***","timestamp":"2015-03-27T22:34:04.113Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T22:36:07.789Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T22:36:09.948Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T22:36:09.970Z"}
+{"level":"notice","message":"pid: 1540","timestamp":"2015-03-27T22:36:10.232Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T22:36:10.232Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T22:36:10.232Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T22:36:10.233Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T22:36:10.235Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T22:36:10.236Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T22:36:10.626Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T22:36:10.661Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 18:36:11 ***","timestamp":"2015-03-27T22:36:11.216Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T22:36:44.015Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-27T22:36:45.482Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-27T22:36:45.496Z"}
+{"level":"notice","message":"pid: 1548","timestamp":"2015-03-27T22:36:45.692Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-27T22:36:45.692Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-27T22:36:45.692Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-27T22:36:45.693Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-27T22:36:45.695Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-27T22:36:45.696Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-27T22:36:46.062Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T22:36:46.093Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 18:36:46 ***","timestamp":"2015-03-27T22:36:46.608Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":44,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T22:36:47.951Z"}

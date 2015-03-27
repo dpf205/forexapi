@@ -35,6 +35,7 @@ exports.default = {
       // configuration for your actionhero project structure
       paths: {
         'action':      [ __dirname + '/../actions'      ] ,
+        'models':      [ __dirname + '/../models'        ] ,         
         'task':        [ __dirname + '/../tasks'        ] ,
         'public':      [ __dirname + '/../public'       ] ,
         'pid':         [ __dirname + '/../pids'         ] ,
