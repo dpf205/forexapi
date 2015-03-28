@@ -2099,3 +2099,131 @@
 {"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T22:36:46.093Z"}
 {"level":"notice","message":"*** Server Started @ 2015-03-27 18:36:46 ***","timestamp":"2015-03-27T22:36:46.608Z"}
 {"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":44,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T22:36:47.951Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T22:39:44.277Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-28T02:02:24.980Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-28T02:02:25.007Z"}
+{"level":"notice","message":"pid: 2123","timestamp":"2015-03-28T02:02:25.283Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-28T02:02:25.283Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-28T02:02:25.284Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-28T02:02:25.284Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-28T02:02:25.286Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-28T02:02:25.287Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-28T02:02:25.644Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-28T02:02:25.691Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 22:02:27 ***","timestamp":"2015-03-28T02:02:27.577Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":2,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:02:55.355Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":11,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:02:55.370Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-28T02:03:00.662Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":443,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:03:00.662Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-28T02:03:04.775Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":177,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:03:04.776Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":368,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:03:16.949Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-28T02:03:52.453Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-28T02:27:40.571Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-28T02:27:40.596Z"}
+{"level":"notice","message":"pid: 2230","timestamp":"2015-03-28T02:27:40.857Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-28T02:27:40.857Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-28T02:27:40.857Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-28T02:27:40.857Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-28T02:27:40.859Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-28T02:27:40.860Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-28T02:27:41.211Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-28T02:27:41.256Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 22:27:42 ***","timestamp":"2015-03-28T02:27:42.056Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":50,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:46.888Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":63,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:47.870Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":46,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:48.213Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":43,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:48.475Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":47,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:48.670Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":47,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:48.832Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":51,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:49.037Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":56,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:49.157Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":50,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:49.277Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":43,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:49.472Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":49,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:49.621Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":52,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:49.876Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":56,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:50.568Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":57,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:50.864Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":46,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:51.067Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":40,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:51.212Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":69,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:51.367Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":51,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:51.541Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":49,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:51.657Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":59,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:51.784Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":50,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:52.028Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":51,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:52.141Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":59,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:52.299Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":42,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:52.397Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":48,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:52.556Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":58,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:52.765Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":52,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:52.866Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":48,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:52.989Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":57,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:53.113Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":50,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:53.260Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":46,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:53.574Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":42,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:53.665Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":47,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:53.780Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":45,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:53.969Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":51,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:54.125Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":46,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:54.242Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":53,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:54.374Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":41,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:54.518Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":50,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:54.679Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":45,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:54.987Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":43,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:55.108Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":65,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:55.233Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":47,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:55.375Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":65,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:55.558Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":45,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:55.703Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":44,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:55.813Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":39,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:56.014Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":46,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:56.128Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":52,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:56.270Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":49,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:56.445Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":48,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:27:56.592Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-28T02:28:53.109Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-28T02:28:53.109Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-28T02:28:53.109Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-28T02:28:53.110Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-28T02:28:53.110Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-28T02:28:53.110Z"}
+{"level":"error","message":"! TypeError: Property 'log' of object #<Console> is not a function","timestamp":"2015-03-28T02:28:53.110Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:25:15)","timestamp":"2015-03-28T02:28:53.110Z"}
+{"level":"error","message":"!     at Query.nrWrappedHandler (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:369:19)","timestamp":"2015-03-28T02:28:53.111Z"}
+{"level":"error","message":"!     at Query.wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-03-28T02:28:53.111Z"}
+{"level":"error","message":"!     at Query.wrappedCallback (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:421:66)","timestamp":"2015-03-28T02:28:53.111Z"}
+{"level":"error","message":"!     at Query.wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-03-28T02:28:53.111Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-28T02:28:53.112Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-28T02:28:53.112Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-28T02:28:53.112Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-28T02:28:53.112Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-28T02:28:53.112Z"}
+{"level":"error","message":"*","timestamp":"2015-03-28T02:28:53.113Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":344,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:28:53.114Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexdataFromMYSQL","timestamp":"2015-03-28T02:29:18.693Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-03-28T02:29:18.693Z"}
+{"level":"error","message":"!     action: \"getForexdataFromMYSQL\"","timestamp":"2015-03-28T02:29:18.693Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-03-28T02:29:18.693Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-03-28T02:29:18.693Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","timestamp":"2015-03-28T02:29:18.693Z"}
+{"level":"error","message":"! TypeError: Property 'log' of object #<Console> is not a function","timestamp":"2015-03-28T02:29:18.694Z"}
+{"level":"error","message":"!     at Query.<anonymous> (/Users/davidlarrimore/node/forexapi/actions/getForexDataFromMYSQL.js:25:15)","timestamp":"2015-03-28T02:29:18.694Z"}
+{"level":"error","message":"!     at Query.nrWrappedHandler (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:369:19)","timestamp":"2015-03-28T02:29:18.694Z"}
+{"level":"error","message":"!     at Query.wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-03-28T02:29:18.694Z"}
+{"level":"error","message":"!     at Query.wrappedCallback (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:421:66)","timestamp":"2015-03-28T02:29:18.694Z"}
+{"level":"error","message":"!     at Query.wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-03-28T02:29:18.694Z"}
+{"level":"error","message":"!     at Query.b [as _callback] (domain.js:183:18)","timestamp":"2015-03-28T02:29:18.695Z"}
+{"level":"error","message":"!     at Query.Sequence.end (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Sequence.js:96:24)","timestamp":"2015-03-28T02:29:18.695Z"}
+{"level":"error","message":"!     at Query._handleFinalResultPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:144:8)","timestamp":"2015-03-28T02:29:18.695Z"}
+{"level":"error","message":"!     at Query.EofPacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/sequences/Query.js:128:8)","timestamp":"2015-03-28T02:29:18.695Z"}
+{"level":"error","message":"!     at Protocol._parsePacket (/Users/davidlarrimore/node/forexapi/node_modules/mysql/lib/protocol/Protocol.js:271:23)","timestamp":"2015-03-28T02:29:18.695Z"}
+{"level":"error","message":"*","timestamp":"2015-03-28T02:29:18.695Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":420,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:29:18.697Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"apiVersion\":\"1\",\"action\":\"showDocumentation\"}","duration":0,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:29:26.514Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"apiVersion\":\"1\",\"action\":\"showDocumentation\"}","duration":0,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:29:27.147Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"apiVersion\":\"1\",\"action\":\"showDocumentation\"}","duration":0,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:29:27.523Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"apiVersion\":\"1\",\"action\":\"showDocumentation\"}","duration":0,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:29:27.859Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"apiVersion\":\"1\",\"action\":\"showDocumentation\"}","duration":0,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:29:28.180Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"apiVersion\":\"1\",\"action\":\"showDocumentation\"}","duration":0,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:29:28.428Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"apiVersion\":\"1\",\"action\":\"showDocumentation\"}","duration":0,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:29:28.651Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-28T02:30:18.038Z"}
