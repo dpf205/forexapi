@@ -2099,3 +2099,22 @@
 {"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-27T22:36:46.093Z"}
 {"level":"notice","message":"*** Server Started @ 2015-03-27 18:36:46 ***","timestamp":"2015-03-27T22:36:46.608Z"}
 {"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":44,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-27T22:36:47.951Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-03-27T22:39:44.277Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-03-28T02:02:24.980Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-03-28T02:02:25.007Z"}
+{"level":"notice","message":"pid: 2123","timestamp":"2015-03-28T02:02:25.283Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-03-28T02:02:25.283Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-03-28T02:02:25.284Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-03-28T02:02:25.284Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-03-28T02:02:25.286Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-03-28T02:02:25.287Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-03-28T02:02:25.644Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-03-28T02:02:25.691Z"}
+{"level":"notice","message":"*** Server Started @ 2015-03-27 22:02:27 ***","timestamp":"2015-03-28T02:02:27.577Z"}
+{"to":"127.0.0.1","action":"showDocumentation","params":"{\"action\":\"showDocumentation\",\"apiVersion\":1}","duration":2,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:02:55.355Z"}
+{"to":"127.0.0.1","action":"status","params":"{\"action\":\"status\",\"apiVersion\":1}","duration":11,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:02:55.370Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-28T02:03:00.662Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":443,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:03:00.662Z"}
+{"level":"info","message":"The count is: ","timestamp":"2015-03-28T02:03:04.775Z"}
+{"to":"127.0.0.1","action":"getForexdataFromMYSQL","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromMYSQL\"}","duration":177,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:03:04.776Z"}
+{"to":"127.0.0.1","action":"getForexdataFromSequelize","params":"{\"apiVersion\":\"1\",\"action\":\"getForexdataFromSequelize\"}","duration":368,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-03-28T02:03:16.949Z"}
