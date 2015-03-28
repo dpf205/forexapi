@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "actionhero": "10.1.0",
+    "ah-newrelic-plugin": "0.0.5",
     "ah-sequelize-plugin": "^0.4.1",
     "config": "^1.12.0",
     "grunt": "latest",
