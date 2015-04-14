@@ -15,7 +15,7 @@ exports.getForexRates = {
 
   run: function(api, connection, next){    
     api.log("HELLO WORLD")
-    var defaultCodes = ['"EURUSD"','"USDGPB"','"AUDUSD"', '"USDJPY"'];
+    var defaultCodes = ['"EURUSD"','"USDGBP"','"AUDUSD"', '"USDJPY"'];
     api.log ("Default Codes: " + defaultCodes);
     
     try {
@@ -73,38 +73,45 @@ exports.getActiveForexRates = {
 
   run: function(api, connection, next){    
     api.log("HELLO WORLD")
+    var defaultCodes = [];
     
-    api.models.forex_compare.findAll().then(function(forex_rates) {
+    api.models.forex_compare.findAll().then(function(forex_compares) {
+        api.log("Found: " + forex_compares.toString()); 
+        
 
-        connection.response.results = forex_rates;  
-        next(connection, true);
+        for(var i = 0; i < forex_compares.length; i++) {
+          defaultCodes.push('"' + forex_compares[i].code + '"');  
+          api.log("Added: " + forex_compares[i].toString());
+        }
+
+      api.log ("Forex Codes: " + defaultCodes.toString());
+        var url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(" + encodeURIComponent(defaultCodes.toString()) + ")&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
+        api.log ("URL: " + url);
+        var data = "test";  
+        api.log("Data starts as: " + data);
+      
+
+        https.get(url, function(res) {
+            var body = '';
+
+            res.on('data', function(chunk) {
+                body += chunk;
+            });
+
+            res.on('end', function() {
+                data = JSON.parse(body);
+                connection.response.results = data.query.results;  
+                next(connection, true);
+                console.log("Got response: ", JSON.stringify(data.query.results));
+            });
+        }).on('error', function(e) {
+              console.log("Got error: ", e);
+        });
     })
 
 
 
-    api.log ("Input Codes: " + connection.params.codes);
-    var url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(" + encodeURIComponent(connection.params.codes.toString()) + ")&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
-    api.log ("URL: " + url);
-    var data = "test";  
-    api.log("Data starts as: " + data);
-  
-
-    https.get(url, function(res) {
-        var body = '';
-
-        res.on('data', function(chunk) {
-            body += chunk;
-        });
-
-        res.on('end', function() {
-            data = JSON.parse(body);
-            connection.response.results = data.query.results;  
-            next(connection, true);
-            console.log("Got response: ", JSON.stringify(data.query.results));
-        });
-    }).on('error', function(e) {
-          console.log("Got error: ", e);
-    });
+    
       
     //connection.response.results = data.query.results; 
 

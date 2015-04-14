@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define("forex_rate", {
+  return sequelize.define("currency_code", {
         id: {
           type: DataTypes.INTEGER,
           primaryKey: true
