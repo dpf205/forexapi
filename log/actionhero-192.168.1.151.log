@@ -2768,3 +2768,75 @@
 {"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22USDGPB%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-14T01:45:05.673Z"}
 {"level":"info","message":"Data starts as: test","timestamp":"2015-04-14T01:45:05.673Z"}
 {"to":"127.0.0.1","action":"getForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getForexRates\",\"codes\":[\"\\\"EURUSD\\\"\",\"\\\"USDGPB\\\"\",\"\\\"AUDUSD\\\"\",\"\\\"USDJPY\\\"\"]}","duration":2379,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-14T01:45:08.050Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-04-14T01:49:36.423Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-04-14T02:09:29.309Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-04-14T02:09:29.337Z"}
+{"level":"notice","message":"pid: 6410","timestamp":"2015-04-14T02:09:29.640Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-04-14T02:09:29.641Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-04-14T02:09:29.641Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-04-14T02:09:29.641Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-04-14T02:09:29.643Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-04-14T02:09:29.645Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-04-14T02:09:30.085Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-04-14T02:09:30.146Z"}
+{"level":"notice","message":"*** Server Started @ 2015-04-13 22:09:30 ***","timestamp":"2015-04-14T02:09:30.164Z"}
+{"level":"info","message":"HELLO WORLD","timestamp":"2015-04-14T02:12:02.045Z"}
+{"level":"info","message":"Input Codes: undefined","timestamp":"2015-04-14T02:12:02.045Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexRates","timestamp":"2015-04-14T02:12:02.106Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-04-14T02:12:02.106Z"}
+{"level":"error","message":"!     action: \"getForexRates\"","timestamp":"2015-04-14T02:12:02.106Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-04-14T02:12:02.106Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-04-14T02:12:02.106Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexRates\"}","timestamp":"2015-04-14T02:12:02.107Z"}
+{"level":"error","message":"! TypeError: Cannot call method 'toString' of undefined","timestamp":"2015-04-14T02:12:02.107Z"}
+{"level":"error","message":"!     at Object.exports.getActiveForexRates.run (/Users/davidlarrimore/node/forexapi/actions/yahooApi.js:79:172)","timestamp":"2015-04-14T02:12:02.107Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:301:31","timestamp":"2015-04-14T02:12:02.107Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:145:35","timestamp":"2015-04-14T02:12:02.107Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:610:21","timestamp":"2015-04-14T02:12:02.107Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:249:17","timestamp":"2015-04-14T02:12:02.108Z"}
+{"level":"error","message":"!     at iterate (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:149:13)","timestamp":"2015-04-14T02:12:02.108Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:160:25","timestamp":"2015-04-14T02:12:02.108Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:251:21","timestamp":"2015-04-14T02:12:02.108Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:615:34","timestamp":"2015-04-14T02:12:02.108Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:138:17","timestamp":"2015-04-14T02:12:02.108Z"}
+{"level":"error","message":"*","timestamp":"2015-04-14T02:12:02.109Z"}
+{"to":"127.0.0.1","action":"getForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getForexRates\"}","duration":70,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-04-14T02:12:02.113Z"}
+{"level":"info","message":"HELLO WORLD","timestamp":"2015-04-14T02:12:04.758Z"}
+{"level":"info","message":"Input Codes: undefined","timestamp":"2015-04-14T02:12:04.760Z"}
+{"level":"error","message":"! uncaught error from action: action:getForexRates","timestamp":"2015-04-14T02:12:04.761Z"}
+{"level":"error","message":"! connection details:","timestamp":"2015-04-14T02:12:04.762Z"}
+{"level":"error","message":"!     action: \"getForexRates\"","timestamp":"2015-04-14T02:12:04.762Z"}
+{"level":"error","message":"!     remoteIP: \"127.0.0.1\"","timestamp":"2015-04-14T02:12:04.762Z"}
+{"level":"error","message":"!     type: \"web\"","timestamp":"2015-04-14T02:12:04.762Z"}
+{"level":"error","message":"!     params: {\"apiVersion\":\"1\",\"action\":\"getForexRates\"}","timestamp":"2015-04-14T02:12:04.763Z"}
+{"level":"error","message":"! TypeError: Cannot call method 'toString' of undefined","timestamp":"2015-04-14T02:12:04.763Z"}
+{"level":"error","message":"!     at Object.exports.getActiveForexRates.run (/Users/davidlarrimore/node/forexapi/actions/yahooApi.js:79:172)","timestamp":"2015-04-14T02:12:04.763Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:301:31","timestamp":"2015-04-14T02:12:04.763Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:145:35","timestamp":"2015-04-14T02:12:04.763Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:610:21","timestamp":"2015-04-14T02:12:04.763Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:249:17","timestamp":"2015-04-14T02:12:04.764Z"}
+{"level":"error","message":"!     at iterate (/Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:149:13)","timestamp":"2015-04-14T02:12:04.765Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:160:25","timestamp":"2015-04-14T02:12:04.765Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:251:21","timestamp":"2015-04-14T02:12:04.771Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/node_modules/async/lib/async.js:615:34","timestamp":"2015-04-14T02:12:04.771Z"}
+{"level":"error","message":"!     at /Users/davidlarrimore/node/forexapi/node_modules/actionhero/initializers/actionProcessor.js:138:17","timestamp":"2015-04-14T02:12:04.771Z"}
+{"level":"error","message":"*","timestamp":"2015-04-14T02:12:04.772Z"}
+{"to":"127.0.0.1","action":"getForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getForexRates\"}","duration":22,"error":"\"Error: The server experienced an internal error\"","level":"info","message":"[ action @ web ]","timestamp":"2015-04-14T02:12:04.780Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-04-14T02:13:15.251Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-04-14T02:13:20.100Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-04-14T02:13:20.127Z"}
+{"level":"notice","message":"pid: 6419","timestamp":"2015-04-14T02:13:20.424Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-04-14T02:13:20.425Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-04-14T02:13:20.425Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-04-14T02:13:20.426Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-04-14T02:13:20.428Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-04-14T02:13:20.429Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-04-14T02:13:20.857Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-04-14T02:13:20.911Z"}
+{"level":"notice","message":"*** Server Started @ 2015-04-13 22:13:20 ***","timestamp":"2015-04-14T02:13:20.933Z"}
+{"level":"info","message":"HELLO WORLD","timestamp":"2015-04-14T02:13:24.426Z"}
+{"level":"info","message":"Default Codes: \"EURUSD\",\"USDGPB\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-14T02:13:24.427Z"}
+{"level":"info","message":"Input Codes: \"EURUSD\",\"USDGPB\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-14T02:13:24.427Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22USDGPB%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-14T02:13:24.427Z"}
+{"level":"info","message":"Data starts as: test","timestamp":"2015-04-14T02:13:24.427Z"}
+{"to":"127.0.0.1","action":"getForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getForexRates\",\"codes\":[\"\\\"EURUSD\\\"\",\"\\\"USDGPB\\\"\",\"\\\"AUDUSD\\\"\",\"\\\"USDJPY\\\"\"]}","duration":1316,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-14T02:13:25.742Z"}

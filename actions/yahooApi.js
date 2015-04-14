@@ -61,7 +61,7 @@ exports.getForexRates = {
 
 
 exports.getActiveForexRates = {
-  name: 'getForexRates',
+  name: 'getActiveForexRates',
   description: 'Returns rates based upon active items from the forex_compare table',
   inputs: {
     codes: [
@@ -74,7 +74,14 @@ exports.getActiveForexRates = {
   run: function(api, connection, next){    
     api.log("HELLO WORLD")
     
-    
+    api.models.forex_compare.findAll().then(function(forex_rates) {
+
+        connection.response.results = forex_rates;  
+        next(connection, true);
+    })
+
+
+
     api.log ("Input Codes: " + connection.params.codes);
     var url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(" + encodeURIComponent(connection.params.codes.toString()) + ")&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=";
     api.log ("URL: " + url);
