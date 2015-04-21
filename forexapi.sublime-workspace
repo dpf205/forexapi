@@ -8,26 +8,10 @@
 	"buffers":
 	[
 		{
-			"file": "scripts/forex_codes.csv",
+			"file": "actions/yahooApi.js",
 			"settings":
 			{
-				"buffer_size": 3763,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "scripts/forex_codes.sql",
-			"settings":
-			{
-				"buffer_size": 13829,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "migrations/20150330211527-unnamed-migration.js",
-			"settings":
-			{
-				"buffer_size": 893,
+				"buffer_size": 8460,
 				"line_ending": "Unix"
 			}
 		}
@@ -65,12 +49,25 @@
 	"expanded_folders":
 	[
 		"/Users/davidlarrimore/node/forexapi",
-		"/Users/davidlarrimore/node/forexapi/initializers",
-		"/Users/davidlarrimore/node/forexapi/migrations",
+		"/Users/davidlarrimore/node/forexapi/actions",
+		"/Users/davidlarrimore/node/forexapi/models",
 		"/Users/davidlarrimore/node/forexapi/scripts"
 	],
 	"file_history":
 	[
+		"/Users/davidlarrimore/node/forexapi/scripts/forex_codes.sql",
+		"/Users/davidlarrimore/node/forexapi/scripts/forex_compare.sql",
+		"/Users/davidlarrimore/node/forexapi/migrations/20150413224123-unnamed-migration.js",
+		"/Users/davidlarrimore/node/forexapi/migrations/20150413223342-unnamed-migration.js",
+		"/Users/davidlarrimore/node/forexapi/actions/insertForexData.js",
+		"/Users/davidlarrimore/node/forexapi/actions/yahooApi.js",
+		"/Users/davidlarrimore/node/forexapi/models/forex_compare.js",
+		"/Users/davidlarrimore/node/forexapi/models/currency_codes.js",
+		"/Users/davidlarrimore/node/forexapi/run.sh",
+		"/Users/davidlarrimore/node/forexapi/test.sh",
+		"/Users/davidlarrimore/node/forexapi/migrations/20150413203230-unnamed-migration.js",
+		"/Users/davidlarrimore/node/forexapi/migrations/20150413202204-unnamed-migration.js",
+		"/Users/davidlarrimore/node/forexapi/scripts/forex_codes.csv",
 		"/Users/davidlarrimore/node/forexapi/scripts/codes.csv",
 		"/Users/davidlarrimore/node/forexapi/migrations/20150330211527-unnamed-migration.js",
 		"/Users/davidlarrimore/node/forexapi/migrations/20150329114557-unnamed-migration.js",
@@ -80,7 +77,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -94,6 +91,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"INTO forex_code",
+			"pound",
+			"GBP",
+			",Code,"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -101,6 +102,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"INTO forex_codes",
+			",currency_code,"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -111,90 +114,34 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "scripts/forex_codes.csv",
+					"file": "actions/yahooApi.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3763,
+						"buffer_size": 8460,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								431,
-								431
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SQL/SQL.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "scripts/forex_codes.sql",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13829,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2019,
-								2019
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SQL/SQL.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "migrations/20150330211527-unnamed-migration.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 893,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								209,
-								209
+								7026,
+								7026
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1003.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -242,7 +189,7 @@
 	"project": "forexapi.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -280,7 +227,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 232.0,
+	"side_bar_width": 235.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

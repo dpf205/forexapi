@@ -46,7 +46,7 @@ exports.getForexRates = {
             data = JSON.parse(body);
             connection.response.results = data.query.results;  
             next(connection, true);
-            console.log("Got response: ", JSON.stringify(data.query.results));
+            console.log("Got response from ForexAPI: ", JSON.stringify(data.query.results));
         });
     }).on('error', function(e) {
           console.log("Got error: ", e);
@@ -102,7 +102,7 @@ exports.getActiveForexRates = {
                 data = JSON.parse(body);
                 connection.response.results = data.query.results;  
                 next(connection, true);
-                console.log("Got response: ", JSON.stringify(data.query.results));
+                console.log("Got response from ForexAPI: ", JSON.stringify(data.query.results));
             });
         }).on('error', function(e) {
               console.log("Got error: ", e);
