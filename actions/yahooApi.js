@@ -73,7 +73,6 @@ exports.getActiveForexRates = {
 
   run: function(api, connection, next){    
     api.log("Starting action 'getActiveForexRates'");
-    var defaultCodes = [];
     
     api.models.forex_compare.findAll().then(function(forex_compares) {
         api.log("Found: " + forex_compares.toString()); 
