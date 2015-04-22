@@ -7,7 +7,7 @@ var task = {
   queue:         "default",
   plugins:       [], 
   pluginOptions: [], 
-  frequency:     15000,
+  frequency:     60000,
   run: function(api, params, next){
       var url = "http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1";
       api.log ("URL: " + url);
@@ -67,10 +67,11 @@ var task = {
                 ask: jsonObj[i].Ask,
               }})
           }
-            next(err); //task will fail if sendEmail does
-
+          next();
         });
-    });
+    }).on('error', function(e) {
+              console.log("Got error: ", e);
+      });
   }
 };
 
