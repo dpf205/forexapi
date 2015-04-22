@@ -9,12 +9,11 @@ var task = {
   pluginOptions: [], 
   frequency:     60000,
   run: function(api, params, next){
+      api.log("Starting task 'getForexData'");
       var url = "http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1";
       api.log ("URL: " + url);
-      var data = "test";  
-      api.log("Data starts as: " + data);
+      var data = "";  
     
-
       https.get(url, function(res) {
         var body = '';
 
@@ -67,6 +66,7 @@ var task = {
                 ask: jsonObj[i].Ask,
               }})
           }
+          api.log("Ending task 'getForexData'");
           next();
         });
     }).on('error', function(e) {
