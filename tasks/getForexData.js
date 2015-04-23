@@ -1,5 +1,6 @@
 var Sequelize = require('sequelize');
 var https = require("http");
+var moment = require('moment');
 
 var task = {
   name:          "getForexData",
@@ -44,21 +45,24 @@ var task = {
             var timeParts = jsonObj[i].Time.split(':');
             var hour = timeParts[0];
             var minute = timeParts[1].substring(0, timeParts[1].length - 2);
-            if (ampm = "pm"){
+            api.log("Original Time: " + jsonObj[i].Time);
+            if (ampm == "pm"){
               hour = parseInt(timeParts[0]) + 12;
             }
             api.log("Time: " + hour + ':' + minute);
 
-            api.log("New Date String: " + dateParts[2] + "-" + dateParts[0] + "-" + dateParts[1] + " " + hour + ":" + minute + "+05:00");
-            
+            api.log("New Date String: " + dateParts[2] + "-" + dateParts[0] + "-" + dateParts[1] + " " + hour + ":" + minute + " +01:00");
+            var dateString = dateParts[2] + "-" + dateParts[0] + "-" + dateParts[1] + " " + hour + ":" + minute + " +01:00";
+            var newDate = moment(dateString, "YYYY-MM-DD HH:mm Z");
+
             // new Date(year, month [, day [, hours[, minutes[, seconds[, ms]]]]])
-            var newDate = new Date(Date.UTC(dateParts[2], dateParts[0]-1, dateParts[1], hour, minute));
-            api.log("New Date: " + newDate);
+            //var newDate = new Date(Date.UTC(dateParts[2], dateParts[0]-1, dateParts[1], hour, minute));
+            api.log("New Date: " + newDate.toISOString());
 
             api.models.forex_rate.findOrCreate({
-              where: {nk: newDate.getTime() + '~' + jsonObj[i].id}, 
+              where: {nk: newDate.unix() + '~' + jsonObj[i].id}, 
               defaults: {
-                date: newDate.getTime(),
+                date: newDate.toISOString(),
                 code: jsonObj[i].id,
                 name: jsonObj[i].Name,
                 rate: jsonObj[i].Rate,

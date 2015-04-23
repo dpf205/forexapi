@@ -10,7 +10,11 @@ module.exports = function(sequelize, DataTypes) {
         },    
         date: {
           type: DataTypes.DATE,
-        },      
+        }, 
+        createdAt: {
+          type: DataTypes.DATE,
+          defaultValue: sequelize.NOW
+        },
         code: {
           type: DataTypes.STRING,
           defaultValue: false,
