@@ -49,10 +49,10 @@ var task = {
             }
             api.log("Time: " + hour + ':' + minute);
 
-            api.log("New Date String: " + dateParts[2] + "-" + dateParts[0] + "-" + dateParts[1] + " " + hour + ":" + minute);
+            api.log("New Date String: " + dateParts[2] + "-" + dateParts[0] + "-" + dateParts[1] + " " + hour + ":" + minute + "+05:00");
             
             // new Date(year, month [, day [, hours[, minutes[, seconds[, ms]]]]])
-            var newDate = new Date(dateParts[2], dateParts[0]-1, dateParts[1], hour, minute);
+            var newDate = new Date(Date.UTC(dateParts[2], dateParts[0]-1, dateParts[1], hour, minute));
             api.log("New Date: " + newDate);
 
             api.models.forex_rate.findOrCreate({

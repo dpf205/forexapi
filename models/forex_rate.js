@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
           primaryKey: true
         },    
         date: {
-          type: DataTypes.DATE
+          type: DataTypes.DATE,
         },      
         code: {
           type: DataTypes.STRING,

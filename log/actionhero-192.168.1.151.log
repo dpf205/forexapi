@@ -5727,3 +5727,399 @@
 {"level":"info","message":"New Date: Thu Apr 23 2015 13:46:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:46:53.343Z"}
 {"level":"info","message":"Ending task 'getForexData'","timestamp":"2015-04-23T00:46:53.344Z"}
 {"workerId":1,"job":{"class":"getForexData","queue":"default"},"level":"info","message":"worker: job success default","timestamp":"2015-04-23T00:46:53.417Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-04-23T00:47:30.452Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-04-23T00:47:30.452Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-04-23T00:47:30.756Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-04-23T00:47:31.960Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-04-23T00:47:48.983Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-04-23T00:47:49.016Z"}
+{"level":"notice","message":"pid: 6168","timestamp":"2015-04-23T00:47:49.351Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-04-23T00:47:49.351Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-04-23T00:47:49.352Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-04-23T00:47:49.352Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-04-23T00:47:49.355Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-04-23T00:47:49.357Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-04-23T00:47:49.359Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-04-23T00:47:50.255Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-04-23T00:47:50.266Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-04-23T00:47:50.266Z"}
+{"level":"notice","message":"*** Server Started @ 2015-04-22 20:47:50 ***","timestamp":"2015-04-23T00:47:50.356Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-04-23T00:47:50.777Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-23T00:47:50.827Z"}
+{"level":"info","message":"URL: http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1","timestamp":"2015-04-23T00:47:50.827Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-23T00:47:50.839Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-23T00:47:50.851Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:47:50.852Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:47:50.852Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:47:50.852Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:47:50.852Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-23T00:47:50.852Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-23T00:47:50.853Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-23T00:47:51.154Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":317,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-23T00:47:51.155Z"}
+{"level":"info","message":"Got response from getActiveForexRates: ","timestamp":"2015-04-23T00:47:51.162Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-23T00:47:51.162Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:47:51.162Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:47:51.162Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:47:51.162Z"}
+{"level":"info","message":"Time: 13:47","timestamp":"2015-04-23T00:47:51.163Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:47","timestamp":"2015-04-23T00:47:51.163Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:47:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:47:51.163Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:47:51.164Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:47:51.165Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:47:51.165Z"}
+{"level":"info","message":"Time: 13:47","timestamp":"2015-04-23T00:47:51.165Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:47","timestamp":"2015-04-23T00:47:51.165Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:47:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:47:51.166Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-04-23T00:47:51.168Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:47:51.169Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:47:51.170Z"}
+{"level":"info","message":"Time: 13:47","timestamp":"2015-04-23T00:47:51.171Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:47","timestamp":"2015-04-23T00:47:51.171Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:47:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:47:51.171Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-04-23T00:47:51.172Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:47:51.172Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:47:51.172Z"}
+{"level":"info","message":"Time: 13:47","timestamp":"2015-04-23T00:47:51.172Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:47","timestamp":"2015-04-23T00:47:51.172Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:47:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:47:51.173Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-04-23T00:47:51.173Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:47:51.174Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:47:51.174Z"}
+{"level":"info","message":"Time: 13:47","timestamp":"2015-04-23T00:47:51.174Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:47","timestamp":"2015-04-23T00:47:51.174Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:47:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:47:51.174Z"}
+{"level":"info","message":"Ending task 'getForexData'","timestamp":"2015-04-23T00:47:51.175Z"}
+{"workerId":1,"job":{"class":"getForexData","queue":"default"},"level":"info","message":"worker: job success default","timestamp":"2015-04-23T00:47:51.289Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-04-23T00:47:51.309Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-04-23T00:47:51.827Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-23T00:48:56.388Z"}
+{"level":"info","message":"URL: http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1","timestamp":"2015-04-23T00:48:56.388Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-23T00:48:56.393Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-23T00:48:56.399Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:48:56.399Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:48:56.399Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:48:56.399Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:48:56.399Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-23T00:48:56.400Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-23T00:48:56.400Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-04-23T00:48:56.856Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-23T00:48:56.940Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":549,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-23T00:48:56.941Z"}
+{"level":"info","message":"Got response from getActiveForexRates: ","timestamp":"2015-04-23T00:48:56.944Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-23T00:48:56.944Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:48:56.959Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:48:56.959Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:48:56.959Z"}
+{"level":"info","message":"Time: 13:48","timestamp":"2015-04-23T00:48:56.960Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:48","timestamp":"2015-04-23T00:48:56.960Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:48:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:48:56.960Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:48:56.960Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:48:56.960Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:48:56.961Z"}
+{"level":"info","message":"Time: 13:48","timestamp":"2015-04-23T00:48:56.961Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:48","timestamp":"2015-04-23T00:48:56.961Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:48:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:48:56.961Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-04-23T00:48:56.962Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:48:56.962Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:48:56.962Z"}
+{"level":"info","message":"Time: 13:48","timestamp":"2015-04-23T00:48:56.962Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:48","timestamp":"2015-04-23T00:48:56.962Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:48:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:48:56.962Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-04-23T00:48:56.963Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:48:56.963Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:48:56.964Z"}
+{"level":"info","message":"Time: 13:48","timestamp":"2015-04-23T00:48:56.964Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:48","timestamp":"2015-04-23T00:48:56.964Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:48:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:48:56.964Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-04-23T00:48:56.965Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:48:56.965Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:48:56.965Z"}
+{"level":"info","message":"Time: 13:48","timestamp":"2015-04-23T00:48:56.965Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:48","timestamp":"2015-04-23T00:48:56.965Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:48:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:48:56.966Z"}
+{"level":"info","message":"Ending task 'getForexData'","timestamp":"2015-04-23T00:48:56.966Z"}
+{"workerId":1,"job":{"class":"getForexData","queue":"default"},"level":"info","message":"worker: job success default","timestamp":"2015-04-23T00:48:57.037Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-04-23T00:48:57.368Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-23T00:50:02.144Z"}
+{"level":"info","message":"URL: http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1","timestamp":"2015-04-23T00:50:02.144Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-23T00:50:02.147Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-23T00:50:02.156Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:50:02.156Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:50:02.156Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:50:02.156Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:50:02.156Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-23T00:50:02.156Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-23T00:50:02.156Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-23T00:50:02.378Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":231,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-23T00:50:02.378Z"}
+{"level":"info","message":"Got response from getActiveForexRates: ","timestamp":"2015-04-23T00:50:02.381Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-23T00:50:02.381Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:50:02.381Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:50:02.381Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:50:02.381Z"}
+{"level":"info","message":"Time: 13:50","timestamp":"2015-04-23T00:50:02.381Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:50","timestamp":"2015-04-23T00:50:02.382Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:50:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:50:02.382Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:50:02.383Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:50:02.383Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:50:02.384Z"}
+{"level":"info","message":"Time: 13:50","timestamp":"2015-04-23T00:50:02.384Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:50","timestamp":"2015-04-23T00:50:02.384Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:50:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:50:02.384Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-04-23T00:50:02.385Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:50:02.385Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:50:02.385Z"}
+{"level":"info","message":"Time: 13:50","timestamp":"2015-04-23T00:50:02.385Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:50","timestamp":"2015-04-23T00:50:02.385Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:50:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:50:02.386Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-04-23T00:50:02.386Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:50:02.387Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:50:02.387Z"}
+{"level":"info","message":"Time: 13:50","timestamp":"2015-04-23T00:50:02.387Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:50","timestamp":"2015-04-23T00:50:02.387Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:50:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:50:02.387Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-04-23T00:50:02.389Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:50:02.389Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:50:02.389Z"}
+{"level":"info","message":"Time: 13:50","timestamp":"2015-04-23T00:50:02.389Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:50","timestamp":"2015-04-23T00:50:02.389Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:50:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:50:02.389Z"}
+{"level":"info","message":"Ending task 'getForexData'","timestamp":"2015-04-23T00:50:02.391Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-04-23T00:50:02.430Z"}
+{"workerId":1,"job":{"class":"getForexData","queue":"default"},"level":"info","message":"worker: job success default","timestamp":"2015-04-23T00:50:02.473Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-04-23T00:50:02.940Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-23T00:51:07.567Z"}
+{"level":"info","message":"URL: http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1","timestamp":"2015-04-23T00:51:07.568Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-23T00:51:07.570Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-23T00:51:07.576Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:51:07.577Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:51:07.577Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:51:07.577Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:51:07.577Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-23T00:51:07.577Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-23T00:51:07.578Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-23T00:51:07.772Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":202,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-23T00:51:07.772Z"}
+{"level":"info","message":"Got response from getActiveForexRates: ","timestamp":"2015-04-23T00:51:07.777Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-23T00:51:07.777Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:51:07.777Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:51:07.777Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:51:07.777Z"}
+{"level":"info","message":"Time: 13:51","timestamp":"2015-04-23T00:51:07.778Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:51","timestamp":"2015-04-23T00:51:07.778Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:51:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:51:07.778Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:51:07.778Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:51:07.779Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:51:07.779Z"}
+{"level":"info","message":"Time: 13:51","timestamp":"2015-04-23T00:51:07.779Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:51","timestamp":"2015-04-23T00:51:07.779Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:51:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:51:07.779Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-04-23T00:51:07.780Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:51:07.781Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:51:07.781Z"}
+{"level":"info","message":"Time: 13:51","timestamp":"2015-04-23T00:51:07.781Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:51","timestamp":"2015-04-23T00:51:07.781Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:51:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:51:07.781Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-04-23T00:51:07.782Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:51:07.782Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:51:07.782Z"}
+{"level":"info","message":"Time: 13:51","timestamp":"2015-04-23T00:51:07.782Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:51","timestamp":"2015-04-23T00:51:07.783Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:51:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:51:07.783Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-04-23T00:51:07.783Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:51:07.783Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:51:07.784Z"}
+{"level":"info","message":"Time: 13:51","timestamp":"2015-04-23T00:51:07.784Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:51","timestamp":"2015-04-23T00:51:07.784Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:51:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:51:07.784Z"}
+{"level":"info","message":"Ending task 'getForexData'","timestamp":"2015-04-23T00:51:07.786Z"}
+{"workerId":1,"job":{"class":"getForexData","queue":"default"},"level":"info","message":"worker: job success default","timestamp":"2015-04-23T00:51:07.863Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-23T00:52:12.968Z"}
+{"level":"info","message":"URL: http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1","timestamp":"2015-04-23T00:52:12.969Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-23T00:52:12.971Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-23T00:52:12.982Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:52:12.983Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:52:12.983Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:52:12.983Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:52:12.983Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-23T00:52:12.983Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-23T00:52:12.983Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-23T00:52:13.127Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":156,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-23T00:52:13.127Z"}
+{"level":"info","message":"Got response from getActiveForexRates: ","timestamp":"2015-04-23T00:52:13.136Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-23T00:52:13.136Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:52:13.136Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:52:13.136Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:52:13.137Z"}
+{"level":"info","message":"Time: 13:52","timestamp":"2015-04-23T00:52:13.137Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:52","timestamp":"2015-04-23T00:52:13.137Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:52:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:52:13.141Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:52:13.143Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:52:13.143Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:52:13.144Z"}
+{"level":"info","message":"Time: 13:52","timestamp":"2015-04-23T00:52:13.144Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:52","timestamp":"2015-04-23T00:52:13.144Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:52:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:52:13.144Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-04-23T00:52:13.146Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:52:13.147Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:52:13.147Z"}
+{"level":"info","message":"Time: 13:52","timestamp":"2015-04-23T00:52:13.147Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:52","timestamp":"2015-04-23T00:52:13.147Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:52:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:52:13.147Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-04-23T00:52:13.148Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:52:13.148Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:52:13.148Z"}
+{"level":"info","message":"Time: 13:52","timestamp":"2015-04-23T00:52:13.148Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:52","timestamp":"2015-04-23T00:52:13.148Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:52:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:52:13.149Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-04-23T00:52:13.149Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:52:13.149Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:52:13.149Z"}
+{"level":"info","message":"Time: 13:52","timestamp":"2015-04-23T00:52:13.149Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:52","timestamp":"2015-04-23T00:52:13.150Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:52:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:52:13.150Z"}
+{"level":"info","message":"Ending task 'getForexData'","timestamp":"2015-04-23T00:52:13.150Z"}
+{"workerId":1,"job":{"class":"getForexData","queue":"default"},"level":"info","message":"worker: job success default","timestamp":"2015-04-23T00:52:13.208Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-23T00:53:18.300Z"}
+{"level":"info","message":"URL: http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1","timestamp":"2015-04-23T00:53:18.301Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-23T00:53:18.303Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-23T00:53:18.309Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:53:18.310Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:53:18.310Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:53:18.310Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:53:18.310Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-23T00:53:18.310Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-23T00:53:18.310Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-04-23T00:53:18.410Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-23T00:53:18.526Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":223,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-23T00:53:18.527Z"}
+{"level":"info","message":"Got response from getActiveForexRates: ","timestamp":"2015-04-23T00:53:18.530Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-23T00:53:18.530Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:53:18.530Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:53:18.530Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:53:18.530Z"}
+{"level":"info","message":"Time: 13:53","timestamp":"2015-04-23T00:53:18.531Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:53","timestamp":"2015-04-23T00:53:18.531Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:53:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:53:18.531Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:53:18.531Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:53:18.531Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:53:18.532Z"}
+{"level":"info","message":"Time: 13:53","timestamp":"2015-04-23T00:53:18.532Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:53","timestamp":"2015-04-23T00:53:18.532Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:53:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:53:18.532Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-04-23T00:53:18.534Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:53:18.534Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:53:18.534Z"}
+{"level":"info","message":"Time: 13:53","timestamp":"2015-04-23T00:53:18.534Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:53","timestamp":"2015-04-23T00:53:18.534Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:53:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:53:18.534Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-04-23T00:53:18.535Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:53:18.537Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:53:18.537Z"}
+{"level":"info","message":"Time: 13:53","timestamp":"2015-04-23T00:53:18.539Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:53","timestamp":"2015-04-23T00:53:18.539Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:53:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:53:18.539Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-04-23T00:53:18.540Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:53:18.540Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:53:18.541Z"}
+{"level":"info","message":"Time: 13:53","timestamp":"2015-04-23T00:53:18.541Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:53","timestamp":"2015-04-23T00:53:18.541Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:53:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:53:18.541Z"}
+{"level":"info","message":"Ending task 'getForexData'","timestamp":"2015-04-23T00:53:18.542Z"}
+{"workerId":1,"job":{"class":"getForexData","queue":"default"},"level":"info","message":"worker: job success default","timestamp":"2015-04-23T00:53:18.588Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-04-23T00:53:18.922Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-23T00:54:23.697Z"}
+{"level":"info","message":"URL: http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1","timestamp":"2015-04-23T00:54:23.698Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-23T00:54:23.699Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-23T00:54:23.705Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:54:23.705Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:54:23.705Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:54:23.705Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:54:23.705Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-23T00:54:23.705Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-23T00:54:23.705Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-23T00:54:23.873Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":174,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-23T00:54:23.873Z"}
+{"level":"info","message":"Got response from getActiveForexRates: ","timestamp":"2015-04-23T00:54:23.877Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-23T00:54:23.877Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:54:23.877Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:54:23.877Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:54:23.877Z"}
+{"level":"info","message":"Time: 13:54","timestamp":"2015-04-23T00:54:23.877Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:54","timestamp":"2015-04-23T00:54:23.877Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:54:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:54:23.878Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:54:23.879Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:54:23.879Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:54:23.879Z"}
+{"level":"info","message":"Time: 13:54","timestamp":"2015-04-23T00:54:23.879Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:54","timestamp":"2015-04-23T00:54:23.879Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:54:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:54:23.879Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-04-23T00:54:23.880Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:54:23.881Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:54:23.881Z"}
+{"level":"info","message":"Time: 13:54","timestamp":"2015-04-23T00:54:23.881Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:54","timestamp":"2015-04-23T00:54:23.881Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:54:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:54:23.881Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-04-23T00:54:23.883Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:54:23.883Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:54:23.883Z"}
+{"level":"info","message":"Time: 13:54","timestamp":"2015-04-23T00:54:23.883Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:54","timestamp":"2015-04-23T00:54:23.883Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:54:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:54:23.883Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-04-23T00:54:23.884Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:54:23.885Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:54:23.885Z"}
+{"level":"info","message":"Time: 13:54","timestamp":"2015-04-23T00:54:23.885Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:54","timestamp":"2015-04-23T00:54:23.885Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 13:54:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:54:23.886Z"}
+{"level":"info","message":"Ending task 'getForexData'","timestamp":"2015-04-23T00:54:23.888Z"}
+{"workerId":1,"job":{"class":"getForexData","queue":"default"},"level":"info","message":"worker: job success default","timestamp":"2015-04-23T00:54:23.938Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-04-23T00:54:23.950Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-04-23T00:54:24.461Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-23T00:55:29.042Z"}
+{"level":"info","message":"URL: http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1","timestamp":"2015-04-23T00:55:29.042Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-23T00:55:29.045Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-23T00:55:29.050Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:55:29.050Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:55:29.050Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:55:29.050Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-23T00:55:29.050Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-23T00:55:29.050Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-23T00:55:29.050Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-23T00:55:29.224Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":179,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-23T00:55:29.224Z"}
+{"level":"info","message":"Got response from getActiveForexRates: ","timestamp":"2015-04-23T00:55:29.227Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-23T00:55:29.227Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:55:29.227Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:55:29.227Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:55:29.227Z"}
+{"level":"info","message":"Time: 13:55","timestamp":"2015-04-23T00:55:29.227Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:55+05:00","timestamp":"2015-04-23T00:55:29.228Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 09:55:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:55:29.228Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-23T00:55:29.228Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:55:29.228Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:55:29.228Z"}
+{"level":"info","message":"Time: 13:55","timestamp":"2015-04-23T00:55:29.228Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:55+05:00","timestamp":"2015-04-23T00:55:29.228Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 09:55:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:55:29.228Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-04-23T00:55:29.231Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:55:29.231Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:55:29.231Z"}
+{"level":"info","message":"Time: 13:55","timestamp":"2015-04-23T00:55:29.231Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:55+05:00","timestamp":"2015-04-23T00:55:29.231Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 09:55:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:55:29.231Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-04-23T00:55:29.232Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:55:29.232Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:55:29.232Z"}
+{"level":"info","message":"Time: 13:55","timestamp":"2015-04-23T00:55:29.232Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:55+05:00","timestamp":"2015-04-23T00:55:29.232Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 09:55:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:55:29.232Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-04-23T00:55:29.233Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-23","timestamp":"2015-04-23T00:55:29.233Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-23T00:55:29.233Z"}
+{"level":"info","message":"Time: 13:55","timestamp":"2015-04-23T00:55:29.233Z"}
+{"level":"info","message":"New Date String: 2015-4-23 13:55+05:00","timestamp":"2015-04-23T00:55:29.233Z"}
+{"level":"info","message":"New Date: Thu Apr 23 2015 09:55:00 GMT-0400 (EDT)","timestamp":"2015-04-23T00:55:29.233Z"}
+{"level":"info","message":"Ending task 'getForexData'","timestamp":"2015-04-23T00:55:29.234Z"}
+{"workerId":1,"job":{"class":"getForexData","queue":"default"},"level":"info","message":"worker: job success default","timestamp":"2015-04-23T00:55:29.288Z"}
