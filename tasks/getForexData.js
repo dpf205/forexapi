@@ -22,9 +22,9 @@ var task = {
         });
 
         res.on('end', function() {
+          api.log("Got response from getActiveForexRates: ", JSON.stringify(data.results));          
+          
           data = JSON.parse(body);
-          api.log("Got response from getActiveForexRates: ", JSON.stringify(data.results));
-            
 
           api.log("Converting JSON to Javascript Object"); 
           var jsonObj = JSON.parse(JSON.stringify(data.results.rate));
