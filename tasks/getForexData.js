@@ -8,10 +8,10 @@ var task = {
   queue:         "default",
   plugins:       [], 
   pluginOptions: [], 
-  frequency:     60000,
+  frequency:     6000,
   run: function(api, params, next){
       api.log("Starting task 'getForexData'");
-      var url = "http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1";
+      var url = "http://0.0.0.0:8080/api/getActiveForexRates?apiVersion=1";
       api.log ("URL: " + url);
       var data = "";  
     
