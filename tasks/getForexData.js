@@ -8,12 +8,12 @@ var task = {
   queue:         "default",
   plugins:       [], 
   pluginOptions: [], 
-  frequency:     6000,
+  frequency:     60000,
   run: function(api, params, next){
       api.log("Starting task 'getForexData'"); 
       request('http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1', function (error, response, body) {
         if (!error && response.statusCode == 200) {
-          api.log("Response from getActiveForexRates" + body) // Show the HTML for the Google homepage. 
+          //api.log("Response from getActiveForexRates" + body) // Show the HTML for the Google homepage. 
           api.log("Converting JSON to Javascript Object"); 
           var data = JSON.parse(body);
           api.log("Data: ");
