@@ -1,6 +1,6 @@
 var Sequelize = require('sequelize');
-var https = require("http");
 var moment = require('moment');
+var request = require('request');
 
 var task = {
   name:          "getForexData",
@@ -10,24 +10,13 @@ var task = {
   pluginOptions: [], 
   frequency:     6000,
   run: function(api, params, next){
-      api.log("Starting task 'getForexData'");
-      var url = "http://0.0.0.0:8080/api/getActiveForexRates?apiVersion=1";
-      api.log ("URL: " + url);
-      var data = "";  
-    
-      https.get(url, function(res) {
-        var body = '';
-
-        res.on('data', function(chunk) {
-            body += chunk;
-        });
-
-        res.on('end', function() {
-          api.log("Got response from getActiveForexRates: ", JSON.stringify(data.results));          
-          
-          data = JSON.parse(body);
-
+      api.log("Starting task 'getForexData'"); 
+      request('http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1', function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+          api.log("Response from getActiveForexRates" + body) // Show the HTML for the Google homepage. 
           api.log("Converting JSON to Javascript Object"); 
+          var data = JSON.parse(body);
+          api.log("Data: ");
           var jsonObj = JSON.parse(JSON.stringify(data.results.rate));
 
           for(var i = 0; i < jsonObj.length; i++) {
@@ -72,10 +61,8 @@ var task = {
           }
           api.log("Ending task 'getForexData'");
           next();
-        });
-    }).on('error', function(e) {
-              console.log("Got error: ", e);
-      });
+        }
+      })
   }
 };
 
