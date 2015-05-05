@@ -19,6 +19,7 @@ var task = {
           api.log("Data: ");
           var jsonObj = JSON.parse(JSON.stringify(data.results.rate));
 
+          var bulkData = [];
           for(var i = 0; i < jsonObj.length; i++) {
             //TODO: Need to convert to date/Time
             api.log("inserting: " + jsonObj[i].id);
@@ -48,17 +49,30 @@ var task = {
             //var newDate = new Date(Date.UTC(dateParts[2], dateParts[0]-1, dateParts[1], hour, minute));
             api.log("New Date: " + newDate.toISOString());
 
-            api.models.forex_rate.findOrCreate({
-              where: {nk: newDate.unix() + '~' + jsonObj[i].id}, 
-              defaults: {
-                date: newDate.toISOString(),
-                code: jsonObj[i].id,
-                name: jsonObj[i].Name,
-                rate: jsonObj[i].Rate,
-                bid: jsonObj[i].Bid,
-                ask: jsonObj[i].Ask,
-              }})
+            // api.models.forex_rate.findOrCreate({
+            //   where: {nk: newDate.unix() + '~' + jsonObj[i].id}, 
+            //   defaults: {
+            //     date: newDate.toISOString(),
+            //     code: jsonObj[i].id,
+            //     name: jsonObj[i].Name,
+            //     rate: jsonObj[i].Rate,
+            //     bid: jsonObj[i].Bid,
+            //     ask: jsonObj[i].Ask,
+            //   }})
+
+             bulkData.push({
+              nk: newDate.unix() + '~' + jsonObj[i].id,
+              date: newDate.toISOString(),
+              code: jsonObj[i].id,
+              name: jsonObj[i].Name,
+              rate: jsonObj[i].Rate,
+              bid: jsonObj[i].Bid,
+              ask: jsonObj[i].Ask,
+            });
           }
+          api.log("Bulk Insert");
+          api.models.forex_rate.bulkCreate(bulkData);
+
           api.log("Ending task 'getForexData'");
           next();
         }

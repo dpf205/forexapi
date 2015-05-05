@@ -10361,3 +10361,942 @@
 {"level":"info","message":"resque scheduler ended","timestamp":"2015-04-28T01:44:16.397Z"}
 {"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-04-28T01:44:16.656Z"}
 {"level":"info","message":"task workers stopped","timestamp":"2015-04-28T01:44:17.908Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-04-28T02:05:40.647Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-04-28T02:05:58.526Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-04-28T02:05:58.554Z"}
+{"level":"notice","message":"pid: 9841","timestamp":"2015-04-28T02:05:59.162Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-04-28T02:05:59.163Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-04-28T02:05:59.164Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-04-28T02:05:59.164Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-04-28T02:05:59.172Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-04-28T02:05:59.176Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-04-28T02:05:59.178Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-04-28T02:05:59.846Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-04-28T02:05:59.858Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-04-28T02:05:59.858Z"}
+{"level":"notice","message":"*** Server Started @ 2015-04-27 22:05:59 ***","timestamp":"2015-04-28T02:05:59.963Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:06:00.364Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-28T02:06:00.384Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-28T02:06:00.442Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-28T02:06:00.451Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:06:00.452Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:06:00.452Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:06:00.452Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:06:00.453Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-28T02:06:00.453Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-28T02:06:00.453Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-28T02:06:00.717Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":278,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-28T02:06:00.718Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-28T02:06:00.726Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-04-28T02:06:00.727Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-28T02:06:00.727Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-28","timestamp":"2015-04-28T02:06:00.727Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-28T02:06:00.727Z"}
+{"level":"info","message":"Original Time: 3:06am","timestamp":"2015-04-28T02:06:00.727Z"}
+{"level":"info","message":"Time: 3:06","timestamp":"2015-04-28T02:06:00.727Z"}
+{"level":"info","message":"New Date String: 2015-4-28 3:06 +01:00","timestamp":"2015-04-28T02:06:00.727Z"}
+{"level":"info","message":"New Date: 2015-04-28T02:06:00.000Z","timestamp":"2015-04-28T02:06:00.731Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-04-28T02:06:00.741Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-04-28T02:06:00.741Z"}
+{"level":"error","message":"! TypeError: Cannot set property '0' of undefined","timestamp":"2015-04-28T02:06:00.741Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:63:26)","timestamp":"2015-04-28T02:06:00.742Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-04-28T02:06:00.742Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-04-28T02:06:00.742Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-04-28T02:06:00.742Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-04-28T02:06:00.742Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-04-28T02:06:00.742Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-04-28T02:06:00.742Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-04-28T02:06:00.744Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-04-28T02:06:00.744Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-04-28T02:06:00.744Z"}
+{"level":"error","message":"*","timestamp":"2015-04-28T02:06:00.744Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-04-28T02:08:09.561Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-04-28T02:08:09.562Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-04-28T02:08:09.888Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-04-28T02:08:11.073Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-04-28T02:08:11.610Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-04-28T02:08:11.640Z"}
+{"level":"notice","message":"pid: 9851","timestamp":"2015-04-28T02:08:12.385Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-04-28T02:08:12.385Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-04-28T02:08:12.385Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-04-28T02:08:12.386Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-04-28T02:08:12.389Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-04-28T02:08:12.391Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-04-28T02:08:12.393Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-04-28T02:08:13.123Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-04-28T02:08:13.135Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-04-28T02:08:13.136Z"}
+{"level":"notice","message":"*** Server Started @ 2015-04-27 22:08:13 ***","timestamp":"2015-04-28T02:08:13.244Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:08:13.646Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-28T02:08:13.705Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-28T02:08:13.723Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-28T02:08:13.729Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:08:13.730Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:08:13.730Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:08:13.730Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:08:13.731Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-28T02:08:13.731Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-28T02:08:13.731Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:08:14.168Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-28T02:08:15.574Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":1853,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-28T02:08:15.575Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-28T02:08:15.589Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-04-28T02:08:15.590Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-28T02:08:15.590Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-28","timestamp":"2015-04-28T02:08:15.590Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-28T02:08:15.590Z"}
+{"level":"info","message":"Original Time: 3:08am","timestamp":"2015-04-28T02:08:15.590Z"}
+{"level":"info","message":"Time: 3:08","timestamp":"2015-04-28T02:08:15.590Z"}
+{"level":"info","message":"New Date String: 2015-4-28 3:08 +01:00","timestamp":"2015-04-28T02:08:15.591Z"}
+{"level":"info","message":"New Date: 2015-04-28T02:08:00.000Z","timestamp":"2015-04-28T02:08:15.601Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-04-28T02:08:15.616Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-04-28T02:08:15.616Z"}
+{"level":"error","message":"! TypeError: Cannot call method 'push' of undefined","timestamp":"2015-04-28T02:08:15.616Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:63:23)","timestamp":"2015-04-28T02:08:15.616Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-04-28T02:08:15.616Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-04-28T02:08:15.616Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-04-28T02:08:15.616Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-04-28T02:08:15.616Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-04-28T02:08:15.616Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-04-28T02:08:15.617Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-04-28T02:08:15.623Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-04-28T02:08:15.623Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-04-28T02:08:15.623Z"}
+{"level":"error","message":"*","timestamp":"2015-04-28T02:08:15.624Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-04-28T02:08:15.688Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-04-28T02:09:08.083Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-04-28T02:09:08.083Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-04-28T02:09:08.089Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-04-28T02:09:09.584Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-04-28T02:09:11.614Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-04-28T02:09:11.643Z"}
+{"level":"notice","message":"pid: 9863","timestamp":"2015-04-28T02:09:12.104Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-04-28T02:09:12.104Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-04-28T02:09:12.104Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-04-28T02:09:12.105Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-04-28T02:09:12.107Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-04-28T02:09:12.109Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-04-28T02:09:12.110Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-04-28T02:09:12.798Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-04-28T02:09:12.813Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-04-28T02:09:12.814Z"}
+{"level":"notice","message":"*** Server Started @ 2015-04-27 22:09:12 ***","timestamp":"2015-04-28T02:09:12.907Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:09:13.331Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-28T02:09:13.353Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-28T02:09:13.372Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-28T02:09:13.393Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:09:13.394Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:09:13.395Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:09:13.395Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:09:13.395Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-28T02:09:13.395Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-28T02:09:13.395Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:09:13.864Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-28T02:09:13.921Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":552,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-28T02:09:13.922Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-28T02:09:13.944Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-04-28T02:09:13.944Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-28T02:09:13.944Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-28","timestamp":"2015-04-28T02:09:13.945Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-28T02:09:13.945Z"}
+{"level":"info","message":"Original Time: 3:09am","timestamp":"2015-04-28T02:09:13.945Z"}
+{"level":"info","message":"Time: 3:09","timestamp":"2015-04-28T02:09:13.946Z"}
+{"level":"info","message":"New Date String: 2015-4-28 3:09 +01:00","timestamp":"2015-04-28T02:09:13.946Z"}
+{"level":"info","message":"New Date: 2015-04-28T02:09:00.000Z","timestamp":"2015-04-28T02:09:13.950Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-04-28T02:09:13.959Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-04-28T02:09:13.961Z"}
+{"level":"error","message":"! TypeError: Cannot call method 'push' of undefined","timestamp":"2015-04-28T02:09:13.975Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:63:23)","timestamp":"2015-04-28T02:09:13.978Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-04-28T02:09:13.978Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-04-28T02:09:13.978Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-04-28T02:09:14.015Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-04-28T02:09:14.016Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-04-28T02:09:14.016Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-04-28T02:09:14.016Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-04-28T02:09:14.016Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-04-28T02:09:14.016Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-04-28T02:09:14.016Z"}
+{"level":"error","message":"*","timestamp":"2015-04-28T02:09:14.016Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-04-28T02:09:14.388Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-04-28T02:09:36.212Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-04-28T02:09:36.217Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-04-28T02:09:36.566Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-04-28T02:09:37.730Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-04-28T02:09:39.589Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-04-28T02:09:39.609Z"}
+{"level":"notice","message":"pid: 9875","timestamp":"2015-04-28T02:09:40.217Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-04-28T02:09:40.220Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-04-28T02:09:40.221Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-04-28T02:09:40.222Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-04-28T02:09:40.233Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-04-28T02:09:40.236Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-04-28T02:09:40.258Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-04-28T02:09:40.990Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-04-28T02:09:41.000Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-04-28T02:09:41.000Z"}
+{"level":"notice","message":"*** Server Started @ 2015-04-27 22:09:41 ***","timestamp":"2015-04-28T02:09:41.087Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:09:41.509Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-28T02:09:41.530Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-28T02:09:41.553Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-28T02:09:41.580Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:09:41.582Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:09:41.582Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:09:41.582Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:09:41.582Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-28T02:09:41.582Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-28T02:09:41.583Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-28T02:09:41.871Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":320,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-28T02:09:41.872Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-28T02:09:41.888Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-04-28T02:09:41.889Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-28T02:09:41.889Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-28","timestamp":"2015-04-28T02:09:41.889Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-28T02:09:41.889Z"}
+{"level":"info","message":"Original Time: 3:09am","timestamp":"2015-04-28T02:09:41.889Z"}
+{"level":"info","message":"Time: 3:09","timestamp":"2015-04-28T02:09:41.889Z"}
+{"level":"info","message":"New Date String: 2015-4-28 3:09 +01:00","timestamp":"2015-04-28T02:09:41.889Z"}
+{"level":"info","message":"New Date: 2015-04-28T02:09:00.000Z","timestamp":"2015-04-28T02:09:41.894Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-04-28T02:09:41.899Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-04-28T02:09:41.900Z"}
+{"level":"error","message":"! ReferenceError: builkData is not defined","timestamp":"2015-04-28T02:09:41.901Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:63:13)","timestamp":"2015-04-28T02:09:41.901Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-04-28T02:09:41.901Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-04-28T02:09:41.901Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-04-28T02:09:41.901Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-04-28T02:09:41.901Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-04-28T02:09:41.902Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-04-28T02:09:41.902Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-04-28T02:09:41.902Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-04-28T02:09:41.905Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-04-28T02:09:41.905Z"}
+{"level":"error","message":"*","timestamp":"2015-04-28T02:09:41.905Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-04-28T02:09:58.106Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-04-28T02:09:58.106Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-04-28T02:09:58.132Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-04-28T02:09:59.613Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-04-28T02:10:17.339Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-04-28T02:10:17.366Z"}
+{"level":"notice","message":"pid: 9884","timestamp":"2015-04-28T02:10:17.919Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-04-28T02:10:17.920Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-04-28T02:10:17.920Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-04-28T02:10:17.921Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-04-28T02:10:17.927Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-04-28T02:10:17.928Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-04-28T02:10:17.930Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-04-28T02:10:18.739Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-04-28T02:10:18.751Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-04-28T02:10:18.752Z"}
+{"level":"notice","message":"*** Server Started @ 2015-04-27 22:10:18 ***","timestamp":"2015-04-28T02:10:18.838Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:10:19.259Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-28T02:10:19.290Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-28T02:10:19.335Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-28T02:10:19.346Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:10:19.346Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:10:19.346Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:10:19.347Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:10:19.347Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-28T02:10:19.347Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-28T02:10:19.347Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-28T02:10:19.498Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":166,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-28T02:10:19.499Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-28T02:10:19.508Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-04-28T02:10:19.508Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-28T02:10:19.509Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-28","timestamp":"2015-04-28T02:10:19.509Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-28T02:10:19.509Z"}
+{"level":"info","message":"Original Time: 3:10am","timestamp":"2015-04-28T02:10:19.509Z"}
+{"level":"info","message":"Time: 3:10","timestamp":"2015-04-28T02:10:19.509Z"}
+{"level":"info","message":"New Date String: 2015-4-28 3:10 +01:00","timestamp":"2015-04-28T02:10:19.509Z"}
+{"level":"info","message":"New Date: 2015-04-28T02:10:00.000Z","timestamp":"2015-04-28T02:10:19.513Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-04-28T02:10:19.518Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-04-28T02:10:19.519Z"}
+{"level":"error","message":"! TypeError: Cannot call method 'push' of undefined","timestamp":"2015-04-28T02:10:19.519Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:63:22)","timestamp":"2015-04-28T02:10:19.519Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-04-28T02:10:19.519Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-04-28T02:10:19.519Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-04-28T02:10:19.519Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-04-28T02:10:19.522Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-04-28T02:10:19.522Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-04-28T02:10:19.522Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-04-28T02:10:19.522Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-04-28T02:10:19.524Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-04-28T02:10:19.525Z"}
+{"level":"error","message":"*","timestamp":"2015-04-28T02:10:19.525Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-04-28T02:12:39.343Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-04-28T02:12:39.344Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-04-28T02:12:39.424Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-04-28T02:12:40.855Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-04-28T02:12:46.199Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-04-28T02:12:46.241Z"}
+{"level":"notice","message":"pid: 9899","timestamp":"2015-04-28T02:12:46.806Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-04-28T02:12:46.806Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-04-28T02:12:46.807Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-04-28T02:12:46.807Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-04-28T02:12:46.811Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-04-28T02:12:46.813Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-04-28T02:12:46.814Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-04-28T02:12:47.502Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-04-28T02:12:47.512Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-04-28T02:12:47.512Z"}
+{"level":"notice","message":"*** Server Started @ 2015-04-27 22:12:47 ***","timestamp":"2015-04-28T02:12:47.603Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:12:48.025Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-28T02:12:48.057Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-28T02:12:48.101Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-28T02:12:48.116Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:12:48.116Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:12:48.116Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:12:48.116Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:12:48.117Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-28T02:12:48.117Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-28T02:12:48.117Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:12:48.546Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-28T02:12:50.564Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":2466,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-28T02:12:50.565Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-28T02:12:50.577Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-04-28T02:12:50.577Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-28T02:12:50.577Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-28","timestamp":"2015-04-28T02:12:50.577Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-28T02:12:50.577Z"}
+{"level":"info","message":"Original Time: 3:12am","timestamp":"2015-04-28T02:12:50.577Z"}
+{"level":"info","message":"Time: 3:12","timestamp":"2015-04-28T02:12:50.578Z"}
+{"level":"info","message":"New Date String: 2015-4-28 3:12 +01:00","timestamp":"2015-04-28T02:12:50.578Z"}
+{"level":"info","message":"New Date: 2015-04-28T02:12:00.000Z","timestamp":"2015-04-28T02:12:50.580Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-04-28T02:12:50.583Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-04-28T02:12:50.583Z"}
+{"level":"error","message":"! TypeError: Cannot call method 'set' of undefined","timestamp":"2015-04-28T02:12:50.583Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:63:22)","timestamp":"2015-04-28T02:12:50.583Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-04-28T02:12:50.583Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-04-28T02:12:50.584Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-04-28T02:12:50.584Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-04-28T02:12:50.584Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-04-28T02:12:50.584Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-04-28T02:12:50.584Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-04-28T02:12:50.585Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-04-28T02:12:50.587Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-04-28T02:12:50.587Z"}
+{"level":"error","message":"*","timestamp":"2015-04-28T02:12:50.587Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-04-28T02:12:50.594Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-04-28T02:16:53.683Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-04-28T02:16:53.684Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-04-28T02:16:54.031Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-04-28T02:16:55.188Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-04-28T02:16:56.355Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-04-28T02:16:56.423Z"}
+{"level":"notice","message":"pid: 9921","timestamp":"2015-04-28T02:16:57.111Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-04-28T02:16:57.112Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-04-28T02:16:57.112Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-04-28T02:16:57.112Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-04-28T02:16:57.116Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-04-28T02:16:57.118Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-04-28T02:16:57.119Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-04-28T02:16:57.855Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-04-28T02:16:57.867Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-04-28T02:16:57.868Z"}
+{"level":"notice","message":"*** Server Started @ 2015-04-27 22:16:57 ***","timestamp":"2015-04-28T02:16:57.991Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:16:58.381Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-04-28T02:16:58.413Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-04-28T02:16:58.462Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-04-28T02:16:58.479Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:16:58.497Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:16:58.498Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:16:58.501Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-04-28T02:16:58.505Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-04-28T02:16:58.506Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-04-28T02:16:58.507Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-04-28T02:16:58.727Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":268,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-04-28T02:16:58.728Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-04-28T02:16:58.745Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-04-28T02:16:58.745Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-04-28T02:16:58.745Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-4-28","timestamp":"2015-04-28T02:16:58.745Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-04-28T02:16:58.746Z"}
+{"level":"info","message":"Original Time: 3:16am","timestamp":"2015-04-28T02:16:58.746Z"}
+{"level":"info","message":"Time: 3:16","timestamp":"2015-04-28T02:16:58.746Z"}
+{"level":"info","message":"New Date String: 2015-4-28 3:16 +01:00","timestamp":"2015-04-28T02:16:58.746Z"}
+{"level":"info","message":"New Date: 2015-04-28T02:16:00.000Z","timestamp":"2015-04-28T02:16:58.748Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-04-28T02:16:58.754Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-04-28T02:16:58.754Z"}
+{"level":"error","message":"! TypeError: Cannot call method 'push' of undefined","timestamp":"2015-04-28T02:16:58.754Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:73:22)","timestamp":"2015-04-28T02:16:58.755Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-04-28T02:16:58.755Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-04-28T02:16:58.755Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-04-28T02:16:58.755Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-04-28T02:16:58.757Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-04-28T02:16:58.757Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-04-28T02:16:58.757Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-04-28T02:16:58.757Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-04-28T02:16:58.757Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-04-28T02:16:58.757Z"}
+{"level":"error","message":"*","timestamp":"2015-04-28T02:16:58.757Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:23:54.356Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-04-28T02:23:54.868Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-04-28T02:26:49.594Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-04-28T02:26:50.103Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-04-28T11:10:48.725Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-04-28T11:10:48.726Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-04-28T11:10:48.789Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-04-28T11:10:50.231Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-05-05T00:14:35.025Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-05-05T00:14:35.052Z"}
+{"level":"notice","message":"pid: 16773","timestamp":"2015-05-05T00:14:35.492Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-05-05T00:14:35.492Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-05-05T00:14:35.493Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-05-05T00:14:35.493Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-05-05T00:14:35.495Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-05-05T00:14:35.496Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-05-05T00:14:35.497Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-05-05T00:14:35.945Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-05-05T00:14:35.958Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-05-05T00:14:35.959Z"}
+{"name":"SequelizeConnectionRefusedError","message":"connect ECONNREFUSED","parent":{"code":"ECONNREFUSED","errno":"ECONNREFUSED","syscall":"connect","fatal":true},"original":{"code":"ECONNREFUSED","errno":"ECONNREFUSED","syscall":"connect","fatal":true},"level":"warning","timestamp":"2015-05-05T00:14:36.012Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-05-05T00:15:05.519Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-05-05T00:15:05.546Z"}
+{"level":"notice","message":"pid: 16793","timestamp":"2015-05-05T00:15:05.989Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-05-05T00:15:05.990Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-05-05T00:15:05.990Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-05-05T00:15:05.990Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-05-05T00:15:05.993Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-05-05T00:15:05.994Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-05-05T00:15:05.995Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-05-05T00:15:06.503Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-05-05T00:15:06.524Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-05-05T00:15:06.524Z"}
+{"level":"notice","message":"*** Server Started @ 2015-05-04 20:15:06 ***","timestamp":"2015-05-05T00:15:06.609Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:15:07.022Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-05-05T00:15:07.040Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-05-05T00:15:07.053Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-05-05T00:15:07.066Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:15:07.066Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:15:07.066Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:15:07.066Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:15:07.066Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-05-05T00:15:07.067Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-05-05T00:15:07.067Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:15:07.541Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-05-05T00:15:07.964Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":912,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-05-05T00:15:07.965Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-05-05T00:15:07.973Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-05-05T00:15:07.973Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-05-05T00:15:07.973Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:15:07.973Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:15:07.973Z"}
+{"level":"info","message":"Original Time: 1:15am","timestamp":"2015-05-05T00:15:07.974Z"}
+{"level":"info","message":"Time: 1:15","timestamp":"2015-05-05T00:15:07.982Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:15 +01:00","timestamp":"2015-05-05T00:15:07.982Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:15:00.000Z","timestamp":"2015-05-05T00:15:07.985Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-05-05T00:15:07.988Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-05-05T00:15:07.988Z"}
+{"level":"error","message":"! TypeError: Cannot call method 'push' of undefined","timestamp":"2015-05-05T00:15:07.989Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:72:22)","timestamp":"2015-05-05T00:15:07.990Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-05-05T00:15:07.990Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-05-05T00:15:07.990Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-05-05T00:15:07.990Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-05-05T00:15:07.990Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-05-05T00:15:07.990Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-05-05T00:15:07.991Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-05-05T00:15:07.991Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-05-05T00:15:07.991Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-05-05T00:15:07.991Z"}
+{"level":"error","message":"*","timestamp":"2015-05-05T00:15:07.991Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:15:08.048Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:17:28.235Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:17:28.747Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-05-05T00:18:27.958Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-05-05T00:18:27.959Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:18:28.283Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-05-05T00:18:29.468Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-05-05T00:18:40.707Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-05-05T00:18:40.739Z"}
+{"level":"notice","message":"pid: 16819","timestamp":"2015-05-05T00:18:41.449Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-05-05T00:18:41.449Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-05-05T00:18:41.449Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-05-05T00:18:41.450Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-05-05T00:18:41.454Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-05-05T00:18:41.455Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-05-05T00:18:41.456Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-05-05T00:18:42.171Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-05-05T00:18:42.203Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-05-05T00:18:42.204Z"}
+{"level":"notice","message":"*** Server Started @ 2015-05-04 20:18:42 ***","timestamp":"2015-05-05T00:18:42.302Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:18:42.699Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-05-05T00:18:42.731Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-05-05T00:18:42.768Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-05-05T00:18:42.814Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:18:42.815Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:18:42.829Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:18:42.833Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:18:42.833Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-05-05T00:18:42.834Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-05-05T00:18:42.835Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:18:43.224Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-05-05T00:18:43.369Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":603,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-05-05T00:18:43.371Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-05-05T00:18:43.390Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-05-05T00:18:43.390Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-05-05T00:18:43.390Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:18:43.391Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:18:43.391Z"}
+{"level":"info","message":"Original Time: 1:18am","timestamp":"2015-05-05T00:18:43.391Z"}
+{"level":"info","message":"Time: 1:18","timestamp":"2015-05-05T00:18:43.391Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:18 +01:00","timestamp":"2015-05-05T00:18:43.392Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:18:00.000Z","timestamp":"2015-05-05T00:18:43.397Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-05-05T00:18:43.419Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-05-05T00:18:43.420Z"}
+{"level":"error","message":"! TypeError: Object NaN has no method 'push'","timestamp":"2015-05-05T00:18:43.420Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:72:22)","timestamp":"2015-05-05T00:18:43.422Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-05-05T00:18:43.422Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-05-05T00:18:43.422Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-05-05T00:18:43.423Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-05-05T00:18:43.423Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-05-05T00:18:43.423Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-05-05T00:18:43.423Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-05-05T00:18:43.424Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-05-05T00:18:43.424Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-05-05T00:18:43.424Z"}
+{"level":"error","message":"*","timestamp":"2015-05-05T00:18:43.424Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:18:43.737Z"}
+{"level":"alert","message":"! Failed to load /Users/davidlarrimore/node/forexapi/tasks/getForexData.js","timestamp":"2015-05-05T00:18:54.805Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-05-05T00:19:04.954Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-05-05T00:19:05.037Z"}
+{"level":"notice","message":"pid: 16832","timestamp":"2015-05-05T00:19:05.842Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-05-05T00:19:05.843Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-05-05T00:19:05.844Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-05-05T00:19:05.844Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-05-05T00:19:05.848Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-05-05T00:19:05.854Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-05-05T00:19:05.855Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-05-05T00:19:06.569Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-05-05T00:19:06.582Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-05-05T00:19:06.582Z"}
+{"level":"notice","message":"*** Server Started @ 2015-05-04 20:19:06 ***","timestamp":"2015-05-05T00:19:06.681Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:19:07.116Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-05-05T00:19:07.148Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-05-05T00:19:07.230Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-05-05T00:19:07.247Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:19:07.247Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:19:07.248Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:19:07.248Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:19:07.248Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-05-05T00:19:07.248Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-05-05T00:19:07.248Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:19:07.679Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:19:09.188Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:19:09.705Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:19:11.228Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:19:11.747Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-05-05T00:19:12.905Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":5678,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-05-05T00:19:12.906Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-05-05T00:19:12.916Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-05-05T00:19:12.917Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-05-05T00:19:12.917Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:19:12.917Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:19:12.917Z"}
+{"level":"info","message":"Original Time: 1:19am","timestamp":"2015-05-05T00:19:12.918Z"}
+{"level":"info","message":"Time: 1:19","timestamp":"2015-05-05T00:19:12.920Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:19 +01:00","timestamp":"2015-05-05T00:19:12.920Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:19:00.000Z","timestamp":"2015-05-05T00:19:12.925Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-05-05T00:19:12.931Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-05-05T00:19:12.931Z"}
+{"level":"error","message":"! TypeError: Object #<Object> has no method 'push'","timestamp":"2015-05-05T00:19:12.942Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:72:22)","timestamp":"2015-05-05T00:19:12.942Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-05-05T00:19:12.943Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-05-05T00:19:12.943Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-05-05T00:19:12.943Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-05-05T00:19:12.943Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-05-05T00:19:12.943Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-05-05T00:19:12.943Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-05-05T00:19:12.944Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-05-05T00:19:12.944Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-05-05T00:19:12.944Z"}
+{"level":"error","message":"*","timestamp":"2015-05-05T00:19:12.944Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:19:13.284Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-05-05T00:22:01.119Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-05-05T00:22:01.120Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:22:01.244Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-05-05T00:22:02.629Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-05-05T00:23:27.700Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-05-05T00:23:27.727Z"}
+{"level":"notice","message":"pid: 16988","timestamp":"2015-05-05T00:23:28.197Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-05-05T00:23:28.198Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-05-05T00:23:28.199Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-05-05T00:23:28.199Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-05-05T00:23:28.202Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-05-05T00:23:28.204Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-05-05T00:23:28.205Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-05-05T00:23:28.684Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-05-05T00:23:28.698Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-05-05T00:23:28.698Z"}
+{"level":"notice","message":"*** Server Started @ 2015-05-04 20:23:28 ***","timestamp":"2015-05-05T00:23:28.773Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:23:29.704Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-05-05T00:23:29.726Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-05-05T00:23:29.749Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-05-05T00:23:29.759Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:23:29.759Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:23:29.759Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:23:29.760Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:23:29.760Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-05-05T00:23:29.760Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-05-05T00:23:29.760Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-05-05T00:23:30.666Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":927,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-05-05T00:23:30.667Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-05-05T00:23:30.675Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-05-05T00:23:30.675Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-05-05T00:23:30.676Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:23:30.676Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:23:30.676Z"}
+{"level":"info","message":"Original Time: 1:23am","timestamp":"2015-05-05T00:23:30.676Z"}
+{"level":"info","message":"Time: 1:23","timestamp":"2015-05-05T00:23:30.676Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:23 +01:00","timestamp":"2015-05-05T00:23:30.676Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:23:00.000Z","timestamp":"2015-05-05T00:23:30.683Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-05-05T00:23:30.683Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:23:30.683Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:23:30.684Z"}
+{"level":"info","message":"Original Time: 1:23am","timestamp":"2015-05-05T00:23:30.684Z"}
+{"level":"info","message":"Time: 1:23","timestamp":"2015-05-05T00:23:30.684Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:23 +01:00","timestamp":"2015-05-05T00:23:30.684Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:23:00.000Z","timestamp":"2015-05-05T00:23:30.684Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-05-05T00:23:30.685Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:23:30.685Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:23:30.685Z"}
+{"level":"info","message":"Original Time: 1:23am","timestamp":"2015-05-05T00:23:30.685Z"}
+{"level":"info","message":"Time: 1:23","timestamp":"2015-05-05T00:23:30.685Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:23 +01:00","timestamp":"2015-05-05T00:23:30.685Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:23:00.000Z","timestamp":"2015-05-05T00:23:30.685Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-05-05T00:23:30.685Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:23:30.686Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:23:30.686Z"}
+{"level":"info","message":"Original Time: 1:23am","timestamp":"2015-05-05T00:23:30.686Z"}
+{"level":"info","message":"Time: 1:23","timestamp":"2015-05-05T00:23:30.686Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:23 +01:00","timestamp":"2015-05-05T00:23:30.686Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:23:00.000Z","timestamp":"2015-05-05T00:23:30.686Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-05-05T00:23:30.686Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:23:30.687Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:23:30.687Z"}
+{"level":"info","message":"Original Time: 1:23am","timestamp":"2015-05-05T00:23:30.687Z"}
+{"level":"info","message":"Time: 1:23","timestamp":"2015-05-05T00:23:30.687Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:23 +01:00","timestamp":"2015-05-05T00:23:30.687Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:23:00.000Z","timestamp":"2015-05-05T00:23:30.687Z"}
+{"level":"info","message":"Bulk Insert","timestamp":"2015-05-05T00:23:30.688Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-05-05T00:23:30.693Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-05-05T00:23:30.694Z"}
+{"level":"error","message":"! ReferenceError: builkData is not defined","timestamp":"2015-05-05T00:23:30.694Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:75:43)","timestamp":"2015-05-05T00:23:30.694Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-05-05T00:23:30.694Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-05-05T00:23:30.694Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-05-05T00:23:30.694Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-05-05T00:23:30.695Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-05-05T00:23:30.695Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-05-05T00:23:30.696Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-05-05T00:23:30.696Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-05-05T00:23:30.696Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-05-05T00:23:30.696Z"}
+{"level":"error","message":"*","timestamp":"2015-05-05T00:23:30.696Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:24:55.835Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:24:56.345Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:26:10.937Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:26:11.447Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-05-05T00:28:16.682Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-05-05T00:28:16.683Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:28:16.955Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-05-05T00:28:18.187Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-05-05T00:28:21.418Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-05-05T00:28:21.446Z"}
+{"level":"notice","message":"pid: 17013","timestamp":"2015-05-05T00:28:21.940Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-05-05T00:28:21.940Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-05-05T00:28:21.940Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-05-05T00:28:21.940Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-05-05T00:28:21.944Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-05-05T00:28:21.945Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-05-05T00:28:21.946Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-05-05T00:28:22.448Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-05-05T00:28:22.460Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-05-05T00:28:22.461Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:28:22.516Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-05-05T00:28:22.546Z"}
+{"level":"notice","message":"*** Server Started @ 2015-05-04 20:28:22 ***","timestamp":"2015-05-05T00:28:22.571Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-05-05T00:28:22.579Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-05-05T00:28:22.589Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:28:22.589Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:28:22.589Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:28:22.590Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:28:22.590Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-05-05T00:28:22.591Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-05-05T00:28:22.591Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:28:23.037Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:28:24.053Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:28:24.571Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-05-05T00:28:27.801Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":5224,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-05-05T00:28:27.802Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-05-05T00:28:27.809Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-05-05T00:28:27.810Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-05-05T00:28:27.810Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:28:27.810Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:28:27.810Z"}
+{"level":"info","message":"Original Time: 1:28am","timestamp":"2015-05-05T00:28:27.813Z"}
+{"level":"info","message":"Time: 1:28","timestamp":"2015-05-05T00:28:27.813Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:28 +01:00","timestamp":"2015-05-05T00:28:27.813Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:28:00.000Z","timestamp":"2015-05-05T00:28:27.817Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-05-05T00:28:27.817Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:28:27.817Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:28:27.817Z"}
+{"level":"info","message":"Original Time: 1:28am","timestamp":"2015-05-05T00:28:27.817Z"}
+{"level":"info","message":"Time: 1:28","timestamp":"2015-05-05T00:28:27.817Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:28 +01:00","timestamp":"2015-05-05T00:28:27.817Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:28:00.000Z","timestamp":"2015-05-05T00:28:27.818Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-05-05T00:28:27.818Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:28:27.818Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:28:27.818Z"}
+{"level":"info","message":"Original Time: 1:28am","timestamp":"2015-05-05T00:28:27.818Z"}
+{"level":"info","message":"Time: 1:28","timestamp":"2015-05-05T00:28:27.818Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:28 +01:00","timestamp":"2015-05-05T00:28:27.818Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:28:00.000Z","timestamp":"2015-05-05T00:28:27.818Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-05-05T00:28:27.818Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:28:27.819Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:28:27.819Z"}
+{"level":"info","message":"Original Time: 1:28am","timestamp":"2015-05-05T00:28:27.819Z"}
+{"level":"info","message":"Time: 1:28","timestamp":"2015-05-05T00:28:27.819Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:28 +01:00","timestamp":"2015-05-05T00:28:27.819Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:28:00.000Z","timestamp":"2015-05-05T00:28:27.819Z"}
+{"level":"info","message":"Bulk Insert","timestamp":"2015-05-05T00:28:27.819Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-05-05T00:28:27.829Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-05-05T00:28:27.829Z"}
+{"level":"error","message":"! ReferenceError: builkData is not defined","timestamp":"2015-05-05T00:28:27.829Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:74:43)","timestamp":"2015-05-05T00:28:27.830Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-05-05T00:28:27.830Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-05-05T00:28:27.830Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-05-05T00:28:27.830Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-05-05T00:28:27.830Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-05-05T00:28:27.830Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-05-05T00:28:27.830Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-05-05T00:28:27.830Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-05-05T00:28:27.830Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-05-05T00:28:27.831Z"}
+{"level":"error","message":"*","timestamp":"2015-05-05T00:28:27.831Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:28:28.101Z"}
+{"level":"alert","message":"! Failed to load /Users/davidlarrimore/node/forexapi/tasks/getForexData.js","timestamp":"2015-05-05T00:29:35.728Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-05-05T00:29:38.804Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-05-05T00:30:08.486Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-05-05T00:30:08.511Z"}
+{"level":"notice","message":"pid: 17039","timestamp":"2015-05-05T00:30:08.875Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-05-05T00:30:08.876Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-05-05T00:30:08.876Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-05-05T00:30:08.876Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-05-05T00:30:08.878Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-05-05T00:30:08.880Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-05-05T00:30:08.882Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-05-05T00:30:09.402Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-05-05T00:30:09.412Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-05-05T00:30:09.413Z"}
+{"level":"notice","message":"*** Server Started @ 2015-05-04 20:30:09 ***","timestamp":"2015-05-05T00:30:09.484Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:30:09.930Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-05-05T00:30:09.956Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-05-05T00:30:09.972Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-05-05T00:30:09.986Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:30:09.987Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:30:09.987Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:30:09.987Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:30:09.987Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-05-05T00:30:09.987Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-05-05T00:30:09.987Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:30:10.452Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:30:11.972Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:30:12.491Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-05-05T00:30:15.473Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":5503,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-05-05T00:30:15.474Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-05-05T00:30:15.484Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-05-05T00:30:15.484Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-05-05T00:30:15.484Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:30:15.484Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:30:15.485Z"}
+{"level":"info","message":"Original Time: 1:30am","timestamp":"2015-05-05T00:30:15.485Z"}
+{"level":"info","message":"Time: 1:30","timestamp":"2015-05-05T00:30:15.488Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:30 +01:00","timestamp":"2015-05-05T00:30:15.488Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:30:00.000Z","timestamp":"2015-05-05T00:30:15.492Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-05-05T00:30:15.492Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:30:15.494Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:30:15.495Z"}
+{"level":"info","message":"Original Time: 1:30am","timestamp":"2015-05-05T00:30:15.496Z"}
+{"level":"info","message":"Time: 1:30","timestamp":"2015-05-05T00:30:15.496Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:30 +01:00","timestamp":"2015-05-05T00:30:15.496Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:30:00.000Z","timestamp":"2015-05-05T00:30:15.496Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-05-05T00:30:15.496Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:30:15.497Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:30:15.497Z"}
+{"level":"info","message":"Original Time: 1:30am","timestamp":"2015-05-05T00:30:15.497Z"}
+{"level":"info","message":"Time: 1:30","timestamp":"2015-05-05T00:30:15.497Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:30 +01:00","timestamp":"2015-05-05T00:30:15.501Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:30:00.000Z","timestamp":"2015-05-05T00:30:15.505Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-05-05T00:30:15.505Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:30:15.505Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:30:15.505Z"}
+{"level":"info","message":"Original Time: 1:30am","timestamp":"2015-05-05T00:30:15.505Z"}
+{"level":"info","message":"Time: 1:30","timestamp":"2015-05-05T00:30:15.505Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:30 +01:00","timestamp":"2015-05-05T00:30:15.505Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:30:00.000Z","timestamp":"2015-05-05T00:30:15.506Z"}
+{"level":"info","message":"Bulk Insert","timestamp":"2015-05-05T00:30:15.506Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-05-05T00:30:15.516Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-05-05T00:30:15.516Z"}
+{"level":"error","message":"! ReferenceError: builkData is not defined","timestamp":"2015-05-05T00:30:15.516Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:74:43)","timestamp":"2015-05-05T00:30:15.516Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-05-05T00:30:15.516Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-05-05T00:30:15.516Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-05-05T00:30:15.517Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-05-05T00:30:15.517Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-05-05T00:30:15.517Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-05-05T00:30:15.517Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-05-05T00:30:15.517Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-05-05T00:30:15.517Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-05-05T00:30:15.518Z"}
+{"level":"error","message":"*","timestamp":"2015-05-05T00:30:15.518Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:30:16.032Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-05-05T00:30:39.685Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-05-05T00:30:39.685Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:30:39.723Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-05-05T00:30:41.194Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-05-05T00:30:45.034Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-05-05T00:30:45.057Z"}
+{"level":"notice","message":"pid: 17055","timestamp":"2015-05-05T00:30:45.435Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-05-05T00:30:45.435Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-05-05T00:30:45.436Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-05-05T00:30:45.436Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-05-05T00:30:45.439Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-05-05T00:30:45.448Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-05-05T00:30:45.450Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-05-05T00:30:45.996Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-05-05T00:30:46.011Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-05-05T00:30:46.011Z"}
+{"level":"notice","message":"*** Server Started @ 2015-05-04 20:30:46 ***","timestamp":"2015-05-05T00:30:46.084Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:30:46.521Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-05-05T00:30:46.550Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-05-05T00:30:46.567Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-05-05T00:30:46.577Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:30:46.578Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:30:46.578Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:30:46.578Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:30:46.579Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-05-05T00:30:46.579Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-05-05T00:30:46.579Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:30:47.043Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-05-05T00:30:51.782Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":5218,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-05-05T00:30:51.784Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-05-05T00:30:51.796Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-05-05T00:30:51.796Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-05-05T00:30:51.796Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:30:51.796Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:30:51.796Z"}
+{"level":"info","message":"Original Time: 1:30am","timestamp":"2015-05-05T00:30:51.796Z"}
+{"level":"info","message":"Time: 1:30","timestamp":"2015-05-05T00:30:51.797Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:30 +01:00","timestamp":"2015-05-05T00:30:51.797Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:30:00.000Z","timestamp":"2015-05-05T00:30:51.803Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-05-05T00:30:51.803Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:30:51.803Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:30:51.804Z"}
+{"level":"info","message":"Original Time: 1:30am","timestamp":"2015-05-05T00:30:51.804Z"}
+{"level":"info","message":"Time: 1:30","timestamp":"2015-05-05T00:30:51.804Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:30 +01:00","timestamp":"2015-05-05T00:30:51.804Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:30:00.000Z","timestamp":"2015-05-05T00:30:51.805Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-05-05T00:30:51.805Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:30:51.805Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:30:51.805Z"}
+{"level":"info","message":"Original Time: 1:30am","timestamp":"2015-05-05T00:30:51.806Z"}
+{"level":"info","message":"Time: 1:30","timestamp":"2015-05-05T00:30:51.806Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:30 +01:00","timestamp":"2015-05-05T00:30:51.806Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:30:00.000Z","timestamp":"2015-05-05T00:30:51.806Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-05-05T00:30:51.806Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:30:51.806Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:30:51.806Z"}
+{"level":"info","message":"Original Time: 1:30am","timestamp":"2015-05-05T00:30:51.806Z"}
+{"level":"info","message":"Time: 1:30","timestamp":"2015-05-05T00:30:51.806Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:30 +01:00","timestamp":"2015-05-05T00:30:51.806Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:30:00.000Z","timestamp":"2015-05-05T00:30:51.807Z"}
+{"level":"info","message":"Bulk Insert","timestamp":"2015-05-05T00:30:51.807Z"}
+{"level":"error","message":"! uncaught error from task: task:getForexData on queue default (worker #undefined)","timestamp":"2015-05-05T00:30:51.810Z"}
+{"level":"error","message":"!     arguments: [{}]","timestamp":"2015-05-05T00:30:51.810Z"}
+{"level":"error","message":"! TypeError: Object #<Object> has no method 'forex_ratebulkCreate'","timestamp":"2015-05-05T00:30:51.810Z"}
+{"level":"error","message":"!     at Request._callback (/Users/davidlarrimore/node/forexapi/tasks/getForexData.js:74:22)","timestamp":"2015-05-05T00:30:51.810Z"}
+{"level":"error","message":"!     at Request.self.callback (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:368:22)","timestamp":"2015-05-05T00:30:51.811Z"}
+{"level":"error","message":"!     at Request.emit (events.js:98:17)","timestamp":"2015-05-05T00:30:51.811Z"}
+{"level":"error","message":"!     at Request.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1219:14)","timestamp":"2015-05-05T00:30:51.811Z"}
+{"level":"error","message":"!     at Request.emit (events.js:117:20)","timestamp":"2015-05-05T00:30:51.811Z"}
+{"level":"error","message":"!     at IncomingMessage.<anonymous> (/Users/davidlarrimore/node/forexapi/node_modules/request/request.js:1167:12)","timestamp":"2015-05-05T00:30:51.812Z"}
+{"level":"error","message":"!     at IncomingMessage.emit (events.js:117:20)","timestamp":"2015-05-05T00:30:51.813Z"}
+{"level":"error","message":"!     at _stream_readable.js:944:16","timestamp":"2015-05-05T00:30:51.813Z"}
+{"level":"error","message":"!     at wrapped (/Users/davidlarrimore/node/forexapi/node_modules/newrelic/lib/transaction/tracer/index.js:157:28)","timestamp":"2015-05-05T00:30:51.813Z"}
+{"level":"error","message":"!     at process._tickDomainCallback [as _tickCallback] (node.js:486:13)","timestamp":"2015-05-05T00:30:51.813Z"}
+{"level":"error","message":"*","timestamp":"2015-05-05T00:30:51.813Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:30:52.087Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-05-05T00:31:18.671Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-05-05T00:31:18.681Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:31:18.785Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-05-05T00:31:20.192Z"}
+{"level":"notice","message":"*** starting actionhero ***","timestamp":"2015-05-05T00:31:22.695Z"}
+{"level":"warning","message":"running with fakeredis","timestamp":"2015-05-05T00:31:22.714Z"}
+{"level":"notice","message":"pid: 17067","timestamp":"2015-05-05T00:31:23.097Z"}
+{"level":"notice","message":"server ID: 192.168.1.151","timestamp":"2015-05-05T00:31:23.098Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: defaultRoom","timestamp":"2015-05-05T00:31:23.098Z"}
+{"level":"info","message":"ensuring the existence of the chatRoom: anotherRoom","timestamp":"2015-05-05T00:31:23.099Z"}
+{"level":"info","message":"resque scheduler started","timestamp":"2015-05-05T00:31:23.102Z"}
+{"level":"notice","message":"starting server: web","timestamp":"2015-05-05T00:31:23.103Z"}
+{"level":"notice","message":"starting server: websocket","timestamp":"2015-05-05T00:31:23.105Z"}
+{"level":"info","message":"actionhero member 192.168.1.151 has joined the cluster","timestamp":"2015-05-05T00:31:23.565Z"}
+{"level":"info","message":"enqueuing periodic task: getForexData","timestamp":"2015-05-05T00:31:23.576Z"}
+{"level":"notice","message":"environment: development","timestamp":"2015-05-05T00:31:23.576Z"}
+{"level":"notice","message":"*** Server Started @ 2015-05-04 20:31:23 ***","timestamp":"2015-05-05T00:31:23.642Z"}
+{"workerId":1,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:31:24.591Z"}
+{"level":"info","message":"Starting task 'getForexData'","timestamp":"2015-05-05T00:31:24.616Z"}
+{"level":"info","message":"Starting action 'getActiveForexRates'","timestamp":"2015-05-05T00:31:24.633Z"}
+{"level":"info","message":"Found: [object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance],[object SequelizeInstance]","timestamp":"2015-05-05T00:31:24.641Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:31:24.641Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:31:24.641Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:31:24.642Z"}
+{"level":"info","message":"Added: [object SequelizeInstance]","timestamp":"2015-05-05T00:31:24.642Z"}
+{"level":"info","message":"Forex Codes: \"EURUSD\",\"EURUSD\",\"GBPUSD\",\"AUDUSD\",\"USDJPY\"","timestamp":"2015-05-05T00:31:24.642Z"}
+{"level":"info","message":"URL: https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURUSD%22%2C%22EURUSD%22%2C%22GBPUSD%22%2C%22AUDUSD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=","timestamp":"2015-05-05T00:31:24.642Z"}
+{"workerId":2,"level":"info","message":"worker: started","timestamp":"2015-05-05T00:31:25.112Z"}
+{"level":"info","message":"Ending action 'getActiveForexRates'","timestamp":"2015-05-05T00:31:25.182Z"}
+{"to":"127.0.0.1","action":"getActiveForexRates","params":"{\"apiVersion\":\"1\",\"action\":\"getActiveForexRates\"}","duration":550,"error":"null","level":"info","message":"[ action @ web ]","timestamp":"2015-05-05T00:31:25.183Z"}
+{"level":"info","message":"Converting JSON to Javascript Object","timestamp":"2015-05-05T00:31:25.194Z"}
+{"level":"info","message":"Data: ","timestamp":"2015-05-05T00:31:25.194Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-05-05T00:31:25.194Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:31:25.194Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:31:25.194Z"}
+{"level":"info","message":"Original Time: 1:31am","timestamp":"2015-05-05T00:31:25.196Z"}
+{"level":"info","message":"Time: 1:31","timestamp":"2015-05-05T00:31:25.196Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:31 +01:00","timestamp":"2015-05-05T00:31:25.196Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:31:00.000Z","timestamp":"2015-05-05T00:31:25.198Z"}
+{"level":"info","message":"inserting: EURUSD","timestamp":"2015-05-05T00:31:25.199Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:31:25.199Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:31:25.199Z"}
+{"level":"info","message":"Original Time: 1:31am","timestamp":"2015-05-05T00:31:25.199Z"}
+{"level":"info","message":"Time: 1:31","timestamp":"2015-05-05T00:31:25.200Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:31 +01:00","timestamp":"2015-05-05T00:31:25.200Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:31:00.000Z","timestamp":"2015-05-05T00:31:25.200Z"}
+{"level":"info","message":"inserting: GBPUSD","timestamp":"2015-05-05T00:31:25.200Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:31:25.200Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:31:25.200Z"}
+{"level":"info","message":"Original Time: 1:31am","timestamp":"2015-05-05T00:31:25.201Z"}
+{"level":"info","message":"Time: 1:31","timestamp":"2015-05-05T00:31:25.201Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:31 +01:00","timestamp":"2015-05-05T00:31:25.201Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:31:00.000Z","timestamp":"2015-05-05T00:31:25.201Z"}
+{"level":"info","message":"inserting: AUDUSD","timestamp":"2015-05-05T00:31:25.201Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:31:25.202Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:31:25.202Z"}
+{"level":"info","message":"Original Time: 1:31am","timestamp":"2015-05-05T00:31:25.202Z"}
+{"level":"info","message":"Time: 1:31","timestamp":"2015-05-05T00:31:25.202Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:31 +01:00","timestamp":"2015-05-05T00:31:25.202Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:31:00.000Z","timestamp":"2015-05-05T00:31:25.202Z"}
+{"level":"info","message":"inserting: USDJPY","timestamp":"2015-05-05T00:31:25.202Z"}
+{"level":"info","message":"yyyy-MM-dd: 2015-5-5","timestamp":"2015-05-05T00:31:25.202Z"}
+{"level":"info","message":"AM/PM: am","timestamp":"2015-05-05T00:31:25.203Z"}
+{"level":"info","message":"Original Time: 1:31am","timestamp":"2015-05-05T00:31:25.203Z"}
+{"level":"info","message":"Time: 1:31","timestamp":"2015-05-05T00:31:25.203Z"}
+{"level":"info","message":"New Date String: 2015-5-5 1:31 +01:00","timestamp":"2015-05-05T00:31:25.203Z"}
+{"level":"info","message":"New Date: 2015-05-05T00:31:00.000Z","timestamp":"2015-05-05T00:31:25.203Z"}
+{"level":"info","message":"Bulk Insert","timestamp":"2015-05-05T00:31:25.203Z"}
+{"level":"info","message":"Ending task 'getForexData'","timestamp":"2015-05-05T00:31:25.205Z"}
+{"workerId":1,"job":{"class":"getForexData","queue":"default"},"level":"info","message":"worker: job success default","timestamp":"2015-05-05T00:31:25.236Z"}
+{"workerId":2,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:31:25.619Z"}
+{"level":"alert","message":"Shutting down open servers and stopping task processing","timestamp":"2015-05-05T00:32:19.103Z"}
+{"level":"info","message":"resque scheduler ended","timestamp":"2015-05-05T00:32:19.104Z"}
+{"workerId":1,"level":"info","message":"worker: ended","timestamp":"2015-05-05T00:32:19.519Z"}
+{"level":"info","message":"task workers stopped","timestamp":"2015-05-05T00:32:20.614Z"}
