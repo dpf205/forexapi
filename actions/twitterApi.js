@@ -10,7 +10,7 @@ var T = new Twit({
 
 var fs    = require('fs');
 
-exports.getForexRates = {
+exports.twitterApi = {
   name: 'twitterauth',
   description: 'get twitter auth code',
   inputs: {
