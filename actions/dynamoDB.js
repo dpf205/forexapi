@@ -19,7 +19,6 @@ exports.dynamoDB = {
     api.log("Starting task 'dynamoDB'"); 
     
     var params = {
-      ExclusiveStartTableName: 'twitter',
       Limit: 10
     };
 

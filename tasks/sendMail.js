@@ -73,7 +73,7 @@ var task = {
       });
 
       api.log("Ending task 'sendErrorMail'");
-      next();
+      next(); //task will fail if sendEmail does
   }
 };
 

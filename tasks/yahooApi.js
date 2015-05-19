@@ -8,7 +8,7 @@ var task = {
   queue:         "yahooApi",
   plugins:       [], 
   pluginOptions: [], 
-  frequency:     0,
+  frequency:     60000,
   run: function(api, params, next){
       api.log("Starting task 'getForexData'"); 
       request('http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1', function (error, response, body) {
@@ -78,7 +78,7 @@ var task = {
           });
 
           api.log("Ending task 'getForexData'");
-          next();
+            next(); //task will fail if sendEmail does
         }
       })
   }

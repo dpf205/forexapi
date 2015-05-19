@@ -3,31 +3,43 @@
 	{
 		"selected_items":
 		[
+			[
+				"dynamoDb",
+				"DynamoDB"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "actions/dynamoDB.js",
+			"settings":
+			{
+				"buffer_size": 808,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tasks/yahooApi.js",
+			"settings":
+			{
+				"buffer_size": 3620,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "tasks/getForexData.js",
 			"settings":
 			{
-				"buffer_size": 2747,
+				"buffer_size": 3582,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "actions/yahooApi.js",
+			"file": "tasks/sendMail.js",
 			"settings":
 			{
-				"buffer_size": 8539,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/tasks.js",
-			"settings":
-			{
-				"buffer_size": 1151,
+				"buffer_size": 2131,
 				"line_ending": "Unix"
 			}
 		}
@@ -67,24 +79,43 @@
 		"/Users/davidlarrimore/node/forexapi",
 		"/Users/davidlarrimore/node/forexapi/.elasticbeanstalk",
 		"/Users/davidlarrimore/node/forexapi/actions",
-		"/Users/davidlarrimore/node/forexapi/log",
-		"/Users/davidlarrimore/node/forexapi/pids",
+		"/Users/davidlarrimore/node/forexapi/config",
+		"/Users/davidlarrimore/node/forexapi/config/plugins",
+		"/Users/davidlarrimore/node/forexapi/servers",
 		"/Users/davidlarrimore/node/forexapi/tasks"
 	],
 	"file_history":
 	[
+		"/Users/davidlarrimore/node/forexapi/run.sh",
+		"/Users/davidlarrimore/node/forexapi/.aws/credentials",
+		"/Users/davidlarrimore/node/forexapi/tasks/yahooApi.js",
+		"/Users/davidlarrimore/node/forexapi/actions/twitterApi.js",
+		"/Users/davidlarrimore/.Trash/showDocumentation.js",
+		"/Users/davidlarrimore/node/forexapi/config/tasks.js",
+		"/Users/davidlarrimore/node/forexapi/tasks/sendMail.js",
+		"/Users/davidlarrimore/node/forexapi/tasks/master.js",
+		"/Users/davidlarrimore/node/forexapi/actions/emailtest.js",
+		"/Users/davidlarrimore/node/forexapi/gruntfile.js",
+		"/Users/davidlarrimore/node/forexapi/config/logger.js",
+		"/Users/davidlarrimore/node/forexapi/config/mailer.js",
+		"/Users/davidlarrimore/node/forexapi/config/plugins/mailer.js",
+		"/Users/davidlarrimore/node/forexapi/package.json",
+		"/Users/davidlarrimore/node/forexapi/tasks/sendEmail.js",
+		"/Users/davidlarrimore/node/forexapi/templates/error/text.jade",
+		"/Users/davidlarrimore/node/forexapi/templates/error/html.jade",
+		"/Users/davidlarrimore/node/forexapi/actions/dynamodbApi.js",
+		"/Users/davidlarrimore/node/forexapi/tasks/sendmail.js",
+		"/Users/davidlarrimore/node/forexapi/models/forex_rate.js",
+		"/Users/davidlarrimore/node/forexapi/.gitignore",
+		"/Users/davidlarrimore/node/forexapi/actions/yahooApi.js",
 		"/Users/davidlarrimore/node/forexapi/actions/insertForexData.js",
 		"/Users/davidlarrimore/node/forexapi/tasks/sayHello.js",
-		"/Users/davidlarrimore/node/forexapi/config/tasks.js",
-		"/Users/davidlarrimore/node/forexapi/actions/yahooApi.js",
-		"/Users/davidlarrimore/node/forexapi/models/forex_rate.js",
 		"/Users/davidlarrimore/node/forexapi/scripts/forex_codes.sql",
 		"/Users/davidlarrimore/node/forexapi/scripts/forex_compare.sql",
 		"/Users/davidlarrimore/node/forexapi/migrations/20150413224123-unnamed-migration.js",
 		"/Users/davidlarrimore/node/forexapi/migrations/20150413223342-unnamed-migration.js",
 		"/Users/davidlarrimore/node/forexapi/models/forex_compare.js",
 		"/Users/davidlarrimore/node/forexapi/models/currency_codes.js",
-		"/Users/davidlarrimore/node/forexapi/run.sh",
 		"/Users/davidlarrimore/node/forexapi/test.sh",
 		"/Users/davidlarrimore/node/forexapi/migrations/20150413203230-unnamed-migration.js",
 		"/Users/davidlarrimore/node/forexapi/migrations/20150413202204-unnamed-migration.js",
@@ -92,8 +123,7 @@
 		"/Users/davidlarrimore/node/forexapi/scripts/codes.csv",
 		"/Users/davidlarrimore/node/forexapi/migrations/20150330211527-unnamed-migration.js",
 		"/Users/davidlarrimore/node/forexapi/migrations/20150329114557-unnamed-migration.js",
-		"/Users/davidlarrimore/node/forexapi/initializers/newrelic.js",
-		"/Users/davidlarrimore/node/forexapi/.gitignore"
+		"/Users/davidlarrimore/node/forexapi/initializers/newrelic.js"
 	],
 	"find":
 	{
@@ -111,6 +141,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"1",
 			"HELLO",
 			"INTO forex_code",
 			"pound",
@@ -127,32 +158,32 @@
 			",currency_code,"
 		],
 		"reverse": false,
-		"show_context": true,
-		"use_buffer2": true,
+		"show_context": false,
+		"use_buffer2": false,
 		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "tasks/getForexData.js",
+					"file": "actions/dynamoDB.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2747,
+						"buffer_size": 808,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1757,
-								1757
+								301,
+								301
 							]
 						],
 						"settings":
@@ -161,28 +192,58 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 51.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tasks/yahooApi.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3531,
+								3531
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 802.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "actions/yahooApi.js",
-					"semi_transient": false,
+					"buffer": 2,
+					"file": "tasks/getForexData.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 8539,
+						"buffer_size": 3582,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7903,
-								7903
+								0,
+								0
 							]
 						],
 						"settings":
@@ -192,27 +253,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 967.0,
+						"translation.y": 786.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "config/tasks.js",
+					"buffer": 3,
+					"file": "tasks/sendMail.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1151,
+						"buffer_size": 2131,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								464,
-								464
+								2064,
+								2064
 							]
 						],
 						"settings":
@@ -221,8 +282,8 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 696.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -308,7 +369,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 298.0,
+	"side_bar_width": 226.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
