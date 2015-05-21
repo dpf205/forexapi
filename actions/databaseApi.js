@@ -24,8 +24,6 @@ exports.forex = {
       connection.response.results = forex_rate;  
       //console.log("Got response from ForexAPI: ", JSON.stringify(forex_rate));
       next(connection, true);
-    }).on('error', function(e) {
-          console.log("Got error: ", e);
     });
     api.log("Completed action 'dbGetForexRates'");  
   }  
