@@ -22,7 +22,7 @@ exports.forex = {
     api.models.forex_rate.findAll().then(function(forex_rate) {      
       // projects will be an array of Project instances with the specified name
       connection.response.results = forex_rate;  
-      console.log("Got response from ForexAPI: ", JSON.stringify(forex_rate));
+      //console.log("Got response from ForexAPI: ", JSON.stringify(forex_rate));
       next(connection, true);
     }).on('error', function(e) {
           console.log("Got error: ", e);

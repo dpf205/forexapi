@@ -12,14 +12,6 @@
 	"buffers":
 	[
 		{
-			"file": "actions/dynamoDB.js",
-			"settings":
-			{
-				"buffer_size": 808,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "tasks/yahooApi.js",
 			"settings":
 			{
@@ -28,10 +20,10 @@
 			}
 		},
 		{
-			"file": "tasks/getForexData.js",
+			"file": "actions/databaseApi.js",
 			"settings":
 			{
-				"buffer_size": 3582,
+				"buffer_size": 3461,
 				"line_ending": "Unix"
 			}
 		},
@@ -79,20 +71,19 @@
 		"/Users/davidlarrimore/node/forexapi",
 		"/Users/davidlarrimore/node/forexapi/.elasticbeanstalk",
 		"/Users/davidlarrimore/node/forexapi/actions",
-		"/Users/davidlarrimore/node/forexapi/config",
 		"/Users/davidlarrimore/node/forexapi/config/plugins",
-		"/Users/davidlarrimore/node/forexapi/servers",
-		"/Users/davidlarrimore/node/forexapi/tasks"
+		"/Users/davidlarrimore/node/forexapi/servers"
 	],
 	"file_history":
 	[
+		"/Users/davidlarrimore/node/forexapi/tasks/sendMail.js",
+		"/Users/davidlarrimore/node/forexapi/actions/dynamoDB.js",
 		"/Users/davidlarrimore/node/forexapi/run.sh",
 		"/Users/davidlarrimore/node/forexapi/.aws/credentials",
 		"/Users/davidlarrimore/node/forexapi/tasks/yahooApi.js",
 		"/Users/davidlarrimore/node/forexapi/actions/twitterApi.js",
 		"/Users/davidlarrimore/.Trash/showDocumentation.js",
 		"/Users/davidlarrimore/node/forexapi/config/tasks.js",
-		"/Users/davidlarrimore/node/forexapi/tasks/sendMail.js",
 		"/Users/davidlarrimore/node/forexapi/tasks/master.js",
 		"/Users/davidlarrimore/node/forexapi/actions/emailtest.js",
 		"/Users/davidlarrimore/node/forexapi/gruntfile.js",
@@ -166,41 +157,11 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "actions/dynamoDB.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 808,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								301,
-								301
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 51.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "tasks/yahooApi.js",
 					"semi_transient": false,
 					"settings":
@@ -212,8 +173,8 @@
 						"selection":
 						[
 							[
-								3531,
-								3531
+								3180,
+								3202
 							]
 						],
 						"settings":
@@ -223,19 +184,49 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": -0.0,
-						"translation.y": 802.0,
+						"translation.y": 698.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "actions/databaseApi.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3031,
+								3031
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "tasks/getForexData.js",
+					"file": "tasks/sendMail.js",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3582,
+						"buffer_size": 2131,
 						"regions":
 						{
 						},
@@ -253,40 +244,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 786.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "tasks/sendMail.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2131,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2064,
-								2064
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 696.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
