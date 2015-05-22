@@ -12,10 +12,18 @@
 	"buffers":
 	[
 		{
-			"file": "tasks/sendMail.js",
+			"file": "actions/databaseApi.js",
 			"settings":
 			{
-				"buffer_size": 2131,
+				"buffer_size": 6984,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/chat.html",
+			"settings":
+			{
+				"buffer_size": 5736,
 				"line_ending": "Unix"
 			}
 		}
@@ -53,8 +61,7 @@
 	"expanded_folders":
 	[
 		"/Users/davidlarrimore/node/forexapi",
-		"/Users/davidlarrimore/node/forexapi/.elasticbeanstalk",
-		"/Users/davidlarrimore/node/forexapi/actions",
+		"/Users/davidlarrimore/node/forexapi/public",
 		"/Users/davidlarrimore/node/forexapi/servers"
 	],
 	"file_history":
@@ -146,19 +153,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "tasks/sendMail.js",
-					"semi_transient": true,
+					"file": "actions/databaseApi.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2131,
+						"buffer_size": 6984,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								6686,
+								6686
 							]
 						],
 						"settings":
@@ -172,6 +179,36 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/chat.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5736,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -254,7 +291,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 226.0,
+	"side_bar_width": 223.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -49,7 +49,7 @@ exports.dbGetForexRatesCSV = {
     //forex_rate.findAll({ where: { name: 'A Project' } }).then(function(projects) {
     api.models.forex_rate.findAll().then(function(forex_rate) { 
       api.log("Received Data from forex_rate");
-      var fields = ['id', 'nk', 'date', 'createdAt', 'code', 'name', 'rate', 'bid', 'ask', 'updatedAt']; 
+      var fields = ['date', 'code', 'rate', 'bid', 'ask']; 
       json2csv({ data: forex_rate, fields: fields }, function(err, csv) {
         if (err) console.log(err);
         fs.writeFile('./public/forex_rate.csv', csv, function(err) {
