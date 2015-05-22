@@ -15,7 +15,7 @@
 			"file": "actions/databaseApi.js",
 			"settings":
 			{
-				"buffer_size": 6984,
+				"buffer_size": 6938,
 				"line_ending": "Unix"
 			}
 		},
@@ -157,15 +157,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6984,
+						"buffer_size": 6938,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6686,
-								6686
+								6506,
+								6467
 							]
 						],
 						"settings":
@@ -174,8 +174,8 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 466.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

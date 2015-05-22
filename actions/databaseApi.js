@@ -43,14 +43,28 @@ exports.dbGetForexRatesCSV = {
 
   run: function(api, connection, next){    
 
-
     
+    var defaultCodes = ['EURUSD'];
+    try {
+       if (connection.params.codes == null){
+          api.log("No codes provided, using default of: " + deafultCodes);
+          connection.params.codes = defaultCodes;
+       }else {
+          api.log("searching for the following codes: " + connection.params.codes);
+          connection.params.codes = connection.params.codes.split(",");
+      }
+    } catch (e) {
+        api.log ("did not receive code, defaulting");
+        connection.params.codes = defaultCodes;
+    }
+
+    var defaultFields = ['date', 'code', 'rate', 'bid', 'ask']; 
+
     // search for specific attributes - hash usage
     //forex_rate.findAll({ where: { name: 'A Project' } }).then(function(projects) {
-    api.models.forex_rate.findAll().then(function(forex_rate) { 
-      api.log("Received Data from forex_rate");
-      var fields = ['date', 'code', 'rate', 'bid', 'ask']; 
-      json2csv({ data: forex_rate, fields: fields }, function(err, csv) {
+    api.models.forex_rate.findAll({ where: { code: connection.params.codes } }).then(function(forex_rate) { 
+      api.log("Received " + forex_rate.length + " records from forex_rate table: ");
+      json2csv({ data: forex_rate, fields: defaultFields}, function(err, csv) {
         if (err) console.log(err);
         fs.writeFile('./public/forex_rate.csv', csv, function(err) {
         if (err) throw err;
