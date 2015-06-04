@@ -5,10 +5,10 @@ var request = require('request');
 var task = {
   name:          "getForexData",
   description:   "GetForexData",
-  queue:         "default",
+  queue:         "yahooApi",
   plugins:       [], 
   pluginOptions: [], 
-  frequency:     0,
+  frequency:     60000,
   run: function(api, params, next){
       api.log("Starting task 'getForexData'"); 
       request('http://127.0.0.1:8080/api/getActiveForexRates?apiVersion=1', function (error, response, body) {
@@ -71,14 +71,17 @@ var task = {
             });
           }
           api.log("Bulk Insert");
+          
           api.models.forex_rate.bulkCreate(bulkData).catch(function(error) {
-            api.tasks.enqueue("sendErrorMail", {subject: 'Yahoo API Error', body: "Failed Bulk Data Load on" + moment().format()}, 'default', function(err, toRun){
+            api.tasks.enqueue("sendErrorMail", {subject: 'Yahoo API Task Error', body: "Received error while running task 'getForexData' @" + moment().format() + " \n Received Error: "}, 'default', function(err, toRun){
               // enqueued!
             });
           });
 
+
+
           api.log("Ending task 'getForexData'");
-          next();
+            next(); //task will fail if sendEmail does
         }
       })
   }

@@ -1,0 +1,355 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dynamoDb",
+				"DynamoDB"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "actions/yahooApi.js",
+			"settings":
+			{
+				"buffer_size": 8855,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tasks/yahooApi.js",
+			"settings":
+			{
+				"buffer_size": 3689,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tasks/sendMail.js",
+			"settings":
+			{
+				"buffer_size": 2141,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/davidlarrimore/node/forexapi",
+		"/Users/davidlarrimore/node/forexapi/actions",
+		"/Users/davidlarrimore/node/forexapi/models",
+		"/Users/davidlarrimore/node/forexapi/node_modules",
+		"/Users/davidlarrimore/node/forexapi/public",
+		"/Users/davidlarrimore/node/forexapi/servers",
+		"/Users/davidlarrimore/node/forexapi/tasks"
+	],
+	"file_history":
+	[
+		"/Users/davidlarrimore/node/forexapi/actions/databaseApi.js",
+		"/Users/davidlarrimore/node/forexapi/tasks/yahooApi.js",
+		"/Users/davidlarrimore/node/forexapi/tasks/sendMail.js",
+		"/Users/davidlarrimore/node/forexapi/actions/dynamoDB.js",
+		"/Users/davidlarrimore/node/forexapi/run.sh",
+		"/Users/davidlarrimore/node/forexapi/.aws/credentials",
+		"/Users/davidlarrimore/node/forexapi/actions/twitterApi.js",
+		"/Users/davidlarrimore/.Trash/showDocumentation.js",
+		"/Users/davidlarrimore/node/forexapi/config/tasks.js",
+		"/Users/davidlarrimore/node/forexapi/tasks/master.js",
+		"/Users/davidlarrimore/node/forexapi/actions/emailtest.js",
+		"/Users/davidlarrimore/node/forexapi/gruntfile.js",
+		"/Users/davidlarrimore/node/forexapi/config/logger.js",
+		"/Users/davidlarrimore/node/forexapi/config/mailer.js",
+		"/Users/davidlarrimore/node/forexapi/config/plugins/mailer.js",
+		"/Users/davidlarrimore/node/forexapi/package.json",
+		"/Users/davidlarrimore/node/forexapi/tasks/sendEmail.js",
+		"/Users/davidlarrimore/node/forexapi/templates/error/text.jade",
+		"/Users/davidlarrimore/node/forexapi/templates/error/html.jade",
+		"/Users/davidlarrimore/node/forexapi/actions/dynamodbApi.js",
+		"/Users/davidlarrimore/node/forexapi/tasks/sendmail.js",
+		"/Users/davidlarrimore/node/forexapi/models/forex_rate.js",
+		"/Users/davidlarrimore/node/forexapi/.gitignore",
+		"/Users/davidlarrimore/node/forexapi/actions/yahooApi.js",
+		"/Users/davidlarrimore/node/forexapi/actions/insertForexData.js",
+		"/Users/davidlarrimore/node/forexapi/tasks/sayHello.js",
+		"/Users/davidlarrimore/node/forexapi/scripts/forex_codes.sql",
+		"/Users/davidlarrimore/node/forexapi/scripts/forex_compare.sql",
+		"/Users/davidlarrimore/node/forexapi/migrations/20150413224123-unnamed-migration.js",
+		"/Users/davidlarrimore/node/forexapi/migrations/20150413223342-unnamed-migration.js",
+		"/Users/davidlarrimore/node/forexapi/models/forex_compare.js",
+		"/Users/davidlarrimore/node/forexapi/models/currency_codes.js",
+		"/Users/davidlarrimore/node/forexapi/test.sh",
+		"/Users/davidlarrimore/node/forexapi/migrations/20150413203230-unnamed-migration.js",
+		"/Users/davidlarrimore/node/forexapi/migrations/20150413202204-unnamed-migration.js",
+		"/Users/davidlarrimore/node/forexapi/scripts/forex_codes.csv",
+		"/Users/davidlarrimore/node/forexapi/scripts/codes.csv",
+		"/Users/davidlarrimore/node/forexapi/migrations/20150330211527-unnamed-migration.js",
+		"/Users/davidlarrimore/node/forexapi/migrations/20150329114557-unnamed-migration.js",
+		"/Users/davidlarrimore/node/forexapi/initializers/newrelic.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"models",
+			"1",
+			"HELLO",
+			"INTO forex_code",
+			"pound",
+			"GBP",
+			",Code,"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"INTO forex_codes",
+			",currency_code,"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "actions/yahooApi.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8855,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8679,
+								8630
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 210.0,
+						"translation.y": 1224.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tasks/yahooApi.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3394,
+								3394
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 233.0,
+						"translation.y": 808.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tasks/sendMail.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								616
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "forexapi.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

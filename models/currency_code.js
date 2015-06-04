@@ -1,20 +1,24 @@
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define("forex_rate", {
+  return sequelize.define("currency_code", {
         id: {
           type: DataTypes.INTEGER,
           primaryKey: true
         },
-        nk: {
+        createdAt: {
+          type: DataTypes.DATE,
+          defaultValue: DataTypes.NOW            
+        },
+        updatedAt: {
+          type: DataTypes.DATE,
+          defaultValue: DataTypes.NOW
+        },
+        forex_rate_nk: {
           type: DataTypes.STRING,
           primaryKey: true
         },    
         date: {
-          type: DataTypes.DATE,
-        }, 
-        createdAt: {
-          type: DataTypes.DATE,
-          defaultValue: sequelize.NOW
-        },
+          type: DataTypes.DATE
+        },      
         code: {
           type: DataTypes.STRING,
           defaultValue: false,
