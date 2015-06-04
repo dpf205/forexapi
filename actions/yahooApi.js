@@ -1,6 +1,7 @@
 var https = require("https");
 //var url   = require('url');
 var fs    = require('fs');
+var moment = require('moment');
 
 exports.getForexRates = {
   name: 'getForexRates',
@@ -75,6 +76,7 @@ exports.getActiveForexRates = {
     api.log("Starting action 'getActiveForexRates'");
     var defaultCodes = ['"EURUSD"'];
     
+
     api.models.forex_compare.findAll().then(function(forex_compares) {
         api.log("Found: " + forex_compares.toString()); 
         
@@ -105,11 +107,12 @@ exports.getActiveForexRates = {
         }).on('error', function(e) {
               console.log("Got error: ", e);
         });
-    })
+    }).catch(function(error) {
+        api.tasks.enqueue("sendErrorMail", {subject: 'Yahoo API Action Error', body: "Received Fatal error on 'getActiveForexRates' @" + moment().format() + " \n Received Error: " + error}, 'default', function(err, toRun){
+          // enqueued!
+        });
+    });
 
-
-
-    
       
     //connection.response.results = data.query.results; 
 

@@ -71,11 +71,14 @@ var task = {
             });
           }
           api.log("Bulk Insert");
+          
           api.models.forex_rate.bulkCreate(bulkData).catch(function(error) {
-            api.tasks.enqueue("sendErrorMail", {subject: 'Yahoo API Error', body: "Failed Bulk Data Load on" + moment().format()}, 'default', function(err, toRun){
+            api.tasks.enqueue("sendErrorMail", {subject: 'Yahoo API Task Error', body: "Received error while running task 'getForexData' @" + moment().format() + " \n Received Error: "}, 'default', function(err, toRun){
               // enqueued!
             });
           });
+
+
 
           api.log("Ending task 'getForexData'");
             next(); //task will fail if sendEmail does

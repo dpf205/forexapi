@@ -12,18 +12,26 @@
 	"buffers":
 	[
 		{
-			"file": "actions/databaseApi.js",
+			"file": "actions/yahooApi.js",
 			"settings":
 			{
-				"buffer_size": 6938,
+				"buffer_size": 8855,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/chat.html",
+			"file": "tasks/yahooApi.js",
 			"settings":
 			{
-				"buffer_size": 5736,
+				"buffer_size": 3689,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tasks/sendMail.js",
+			"settings":
+			{
+				"buffer_size": 2141,
 				"line_ending": "Unix"
 			}
 		}
@@ -61,8 +69,12 @@
 	"expanded_folders":
 	[
 		"/Users/davidlarrimore/node/forexapi",
+		"/Users/davidlarrimore/node/forexapi/actions",
+		"/Users/davidlarrimore/node/forexapi/models",
+		"/Users/davidlarrimore/node/forexapi/node_modules",
 		"/Users/davidlarrimore/node/forexapi/public",
-		"/Users/davidlarrimore/node/forexapi/servers"
+		"/Users/davidlarrimore/node/forexapi/servers",
+		"/Users/davidlarrimore/node/forexapi/tasks"
 	],
 	"file_history":
 	[
@@ -123,6 +135,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"models",
 			"1",
 			"HELLO",
 			"INTO forex_code",
@@ -148,67 +161,106 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "actions/databaseApi.js",
+					"file": "actions/yahooApi.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6938,
+						"buffer_size": 8855,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6506,
-								6467
+								8679,
+								8630
 							]
 						],
 						"settings":
 						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 210.0,
+						"translation.y": 1224.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tasks/yahooApi.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3394,
+								3394
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 233.0,
+						"translation.y": 808.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tasks/sendMail.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								616
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": -0.0,
-						"translation.y": 466.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "public/chat.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 5736,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								478,
-								478
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -246,6 +298,10 @@
 	},
 	"menu_visible": true,
 	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
 	{
 		"height": 0.0
 	},
@@ -291,7 +347,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 223.0,
+	"side_bar_width": 197.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -62,8 +62,10 @@ exports.dbGetForexRatesCSV = {
 
     // search for specific attributes - hash usage
     //forex_rate.findAll({ where: { name: 'A Project' } }).then(function(projects) {
-    api.models.forex_rate.findAll({ where: { code: connection.params.codes } }).then(function(forex_rate) { 
+    api.models.forex_rate.findAll({ where: { code: connection.params.codes }, order: ['date DESC'] }).then(function(forex_rate) { 
       api.log("Received " + forex_rate.length + " records from forex_rate table: ");
+
+
       json2csv({ data: forex_rate, fields: defaultFields}, function(err, csv) {
         if (err) console.log(err);
         fs.writeFile('./public/forex_rate.csv', csv, function(err) {

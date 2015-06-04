@@ -23,7 +23,7 @@ var task = {
 
 
       var mailOptions = {
-        from: 'Fred Foo <alerts@mixfin.com>', // sender address
+        from: 'MIXFIN ALERTS <alerts@mixfin.com>', // sender address
         to: params.to, // list of receivers
         subject: params.subject, // Subject line
         text: params.body, // plaintext body
@@ -57,7 +57,7 @@ var task = {
 
 
       var mailOptions = {
-        from: 'Fred Foo <alerts@mixfin.com>', // sender address
+        from: 'MIXFIN ALERTS <alerts@mixfin.com>', // sender address
         to: 'david.larrimore@mixfin.com, admin@mixfin.com', // list of receivers
         subject: '[Mixfin Alerts] - ' + params.subject, // Subject line
         text: params.body, // plaintext body
