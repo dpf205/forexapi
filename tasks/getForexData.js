@@ -5,7 +5,7 @@ var request = require('request');
 var task = {
   name:          "getForexData",
   description:   "GetForexData",
-  queue:         "default",
+  queue:         "yahooApi",
   plugins:       [], 
   pluginOptions: [], 
   frequency:     0,

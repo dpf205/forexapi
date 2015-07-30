@@ -9,14 +9,15 @@ var task = {
   run: function(api, params, next){
       api.log("Starting Task 'JobManager'"); 
 
-      api.tasks.enqueue(0, "getForexData", {to: 'admin@mixfin.com'}, 'default', function(err, toRun){
-        if(error){
-            api.log(error);
-            api.tasks.enqueue("sendErrorMail", {to: 'alerts@mixfin.com', subject: 'JobManager Error', body: error}, 'default', function(err, toRun){
+      api.tasks.enqueue("getForexData", {to: 'admin@mixfin.com'}, 'default', function(err, toRun){
+        if(err){
+            api.log(err);
+            api.tasks.enqueue("sendErrorMail", {to: 'alerts@mixfin.com', subject: 'JobManager Error', body: err}, 'default', function(err, toRun){
             // enqueued!
             });
         }
       });
+
 
       api.log("Ending task 'JobManager'");
       next();
